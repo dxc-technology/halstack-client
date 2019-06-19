@@ -1,0 +1,12 @@
+{
+  "name": "node",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "@diaas/api-sdk": "file:../../lib"
+  }
+}
