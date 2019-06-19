@@ -1,6 +1,6 @@
-# HAL SDK for JavaScript
+# Halstack Client for JavaScript
 
-The HAL SDK for JavaScript, enables javascript developers to easily work with those APIs implementing the HATEOAS pattern. It offers a set of functionalities to facilitate the navigation between resources and the access to the information they provide.
+Halstack Client for JavaScript, enables javascript developers to easily work with those APIs implementing the HATEOAS pattern. It offers a set of functionalities to facilitate the navigation between hypemedia resources and the access to the information they provide.
 
 Available for Node.js and browsers.
 
