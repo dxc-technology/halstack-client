@@ -160,3 +160,6 @@ cd example/node
 npm install
 npm start # runs node application
 ```
+
+#License
+See Halstack Client License [here](./LICENSE)
