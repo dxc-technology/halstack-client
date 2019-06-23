@@ -1,8 +1,8 @@
 # Halstack Client for JavaScript
 
-Halstack Client for JavaScript, enables javascript developers to easily work with those APIs implementing the HATEOAS pattern. It offers a set of functionalities to facilitate the navigation between hypemedia resources and the access to the information they provide.
+Halstack Client for JavaScript enables developers to easily work with hypermedia-based APIs programmatically. It offers a set of functionalities to facilitate the navigation between hypermedia resources and get access to their properties dynamically, based on the JSON:API and JSON Hyperschema specifications.
 
-Available for Node.js and browsers.
+This SDK is released as a client-agnostic library that can be used in many different types of consumers: browser applications (such as React Applications in combination with Halstack Browser) or backend applications (node.js applications or AWS Lambdas).
 
 ## Installation
 
