@@ -4,8 +4,10 @@
   "description": "DXC Technology Halstack Client",
   "main": "./dist/main.js",
   "scripts": {
+    "bundle": "rollup -c",
+    "copy": "node ./scripts/build/copy-distribution-files.js",  
     "start": "rollup -c -w",
-    "build": "rollup -c",
+    "build": "npm run bundle && npm run copy",
     "test": "jest",
     "test:watch": "npm test -- --watch --coverage"
   },
