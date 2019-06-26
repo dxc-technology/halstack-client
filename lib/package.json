@@ -1,7 +1,7 @@
 {
-  "name": "@diaas/api-sdk",
+  "name": "@dxc-technology/halstack-client",
   "version": "1.0.0",
-  "description": "DIaaS API SDK",
+  "description": "DXC Technology Halstack Client",
   "main": "./dist/main.js",
   "scripts": {
     "start": "rollup -c -w",
@@ -9,7 +9,7 @@
     "test": "jest",
     "test:watch": "npm test -- --watch --coverage"
   },
-  "author": "",
+  "author": "Jesus Suarez Ardid",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.2",
