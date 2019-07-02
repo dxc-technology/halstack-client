@@ -13,13 +13,13 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
+    cd lib
+    npm install
     condition: eq($(RELEASE_TYPE), 'release')
-      cd lib
-      npm install
     displayName: 'Install dependencies'
 
   - script: |
-      condition: eq($(RELEASE_TYPE), 'release')
-      cd lib
-      npm run build
+    cd lib
+    npm run build
+    condition: eq($(RELEASE_TYPE), 'release')
     displayName: 'Build library'
