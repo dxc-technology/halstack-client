@@ -7,7 +7,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  condition: eq($(RELEASE_TYPE), 'release')
   - task: NodeTool@0
     inputs:
       versionSpec: '10.x'
@@ -17,8 +16,10 @@ steps:
     cd lib
     npm install
     displayName: 'Install dependencies'
+    condition: eq($(RELEASE_TYPE), 'release')
 
   - script: |
     cd lib
     npm run build
     displayName: 'Build library'
+    condition: eq($(RELEASE_TYPE), 'release')
