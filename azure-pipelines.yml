@@ -16,10 +16,10 @@ steps:
       cd lib
       npm install
     displayName: 'Install dependencies'
-    condition: eq($(RELEASE_TYPE), 'release')
+    condition: eq($env:RELEASE_TYPE, 'release')
 
   - script: |
       cd lib
       npm run build
     displayName: 'Build library'
-    condition: eq($(RELEASE_TYPE), 'release')
+    condition: eq($env:RELEASE_TYPE, 'release')
