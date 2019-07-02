@@ -321,7 +321,7 @@ a.dxc-link:hover {
 	height: 80px;
 }
 .row.navbar {
-    padding: 27px 0 15px;
+    padding: 20px 0;
 }
 
 #header .content {
@@ -752,6 +752,7 @@ img#fueld {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    align-items: center;
 }
 
 
