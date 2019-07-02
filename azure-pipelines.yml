@@ -15,11 +15,11 @@ steps:
   - script: |
     cd lib
     npm install
-    condition: eq($(RELEASE_TYPE), 'release')
+    condition: and(succeeded(), eq(variables['RELEASE_TYPE'], 'release'))
     displayName: 'Install dependencies'
 
   - script: |
     cd lib
     npm run build
-    condition: eq($(RELEASE_TYPE), 'release')
+    condition: and(succeeded(), eq(variables['RELEASE_TYPE'], 'release'))
     displayName: 'Build library'
