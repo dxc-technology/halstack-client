@@ -21,5 +21,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
+    cd lib
     npm run build
   displayName: 'Build library'
