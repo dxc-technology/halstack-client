@@ -7,17 +7,19 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '10.x'
+    displayName: 'Install Node.js'
 
-- script: |
-    cd lib
-    npm install
-  displayName: 'Install dependencies'
+  - script: |
+    condition: eq($(RELEASE_TYPE), 'release')
+      cd lib
+      npm install
+    displayName: 'Install dependencies'
 
-- script: |
-    cd lib
-    npm run build
-  displayName: 'Build library'
+  - script: |
+      condition: eq($(RELEASE_TYPE), 'release')
+      cd lib
+      npm run build
+    displayName: 'Build library'
