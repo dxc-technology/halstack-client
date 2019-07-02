@@ -7,21 +7,21 @@ This SDK is released as a client-agnostic library that can be used in many diffe
 ## Installation
 
 ```sh
-npm install --save @diaas/api-sdk
+npm install --save @dxc/halstack-client
 ```
 
 ### Use in Node.js
 
 ```js
 // require from the dependency the modules you need
-const { halNavigator, halResource } = require("@diaas/api-sdk");
+const { halNavigator, halResource } = require("@dxc/halstack-client");
 ```
 
 ### Use in browsers
 
 ```js
 // require from the dependency the modules you need
-import { halNavigator, halResource } from "@diaas/api-sdk";
+import { halNavigator, halResource } from "@dxc/halstack-client";
 ```
 
 ## Modules
@@ -126,7 +126,7 @@ It returns an object with the halNavigator prototype.
 In the first place, clone this repository.
 
 ```bash
-git clone https://github.dxc.com/DIaaS/diaas-hal-ui.git
+git clone https://github.com/dxc-technology/dxc-halstack-client.git
 ```
 
 Local development is broken into two parts, related to the lib/example folders.

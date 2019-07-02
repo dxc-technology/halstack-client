@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { halNavigator } from "@diaas/api-sdk";
 import "./App.css";
 
 class App extends Component {
@@ -16,20 +15,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const navigator = halNavigator({
-      url:
-        "https://apig.everest.dxchub.com/evsit/omni-prospect-services/omni/service/prospects",
-      headers: { profileid: 12345, userName: "Agent@csc.com" }
-    });
-
-    navigator
-      .fetchItemByNumber(1)
-      .fetchLink("prospect:prospect-risk")
-      .getHALResource(halResource => {
-        this.setState(() => ({
-          actions: halResource.actions
-        }));
-      });
   }
 }
 

@@ -7,6 +7,6 @@
     "start": "node main.js"
   },
   "dependencies": {
-    "@diaas/api-sdk": "file:../../lib"
+    "@dxc/halstack-client": "file:../../lib"
   }
 }
