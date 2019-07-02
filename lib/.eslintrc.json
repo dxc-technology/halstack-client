@@ -1,8 +1,0 @@
-{
-  "extends": ["airbnb-base", "prettier"],
-  "rules": {
-    "linebreak-style": 0,
-    "no-use-before-define": ["error", { "functions": false }],
-    "no-underscore-dangle": ["error", { "allow": ["_options", "_links"] }]
-  }
-}
