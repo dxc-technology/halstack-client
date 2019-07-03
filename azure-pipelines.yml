@@ -39,7 +39,6 @@ steps:
       workingDir: 'lib/dist'
       verbose: true
       customCommand: 'publish --tag alpha'
-      customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
     condition: eq(variables['Build.SourceBranchName'], 'master')
     # condition: eq(variables['RELEASE_OPTION'], 'release')
