@@ -16,10 +16,27 @@ steps:
       cd lib
       npm install
     displayName: 'Install dependencies'
-    condition: eq(variables['RELEASE_OPTION'], 'release')
 
   - script: |
       cd lib
       npm run build
     displayName: 'Build library'
-    condition: eq(variables['RELEASE_OPTION'], 'release')
+
+  - script: |
+      cd lib
+      echo "Add the tests here"
+    displayName: 'Test library'
+
+  - script: |
+      sed -i -e 's/0.0.0/'0.0.0-alpha.$Build.BuildNumber'/g' ./lib/package.json
+    displayName: 'Alpha version library'
+    condition: eq(variables['Build.SourceBranchName'], 'master')
+
+  - task: Npm@1
+    inputs:
+      command: 'custom' # Options: install, publish, custom
+      workingDir: 'lib'
+      verbose: true
+      customCommand: publish --tag alpha
+    condition: eq(variables['Build.SourceBranchName'], 'master')
+    # condition: eq(variables['RELEASE_OPTION'], 'release')
