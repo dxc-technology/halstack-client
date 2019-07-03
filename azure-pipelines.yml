@@ -28,13 +28,16 @@ steps:
     displayName: 'Test library'
 
   - script: |
-      cat ./lib/.npmrc
-      sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' ./lib/.npmrc
-      cat ./lib/.npmrc
+      cd lib
+      cat .npmrc
+      cat $(NPM_TOKEN)
+      sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' .npmrc
+      cat .npmrc
     displayName: '.npmrc file'
 
   - script: |
-      sed -i -e 's/0.0.0/'0.0.0-alpha.$(Build.BuildNumber)'/g' ./lib/package.json
+      cd lib
+      sed -i -e 's/0.0.0/'0.0.0-alpha.$(Build.BuildNumber)'/g' package.json
     displayName: 'Alpha version library'
     condition: eq(variables['Build.SourceBranchName'], 'master')
 
