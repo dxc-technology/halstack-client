@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {halGet} from "@dxc-technology/halstack-client"
+
 import "./App.css";
 
 class App extends Component {
@@ -15,6 +17,15 @@ class App extends Component {
   }
 
   componentDidMount() {
+
+    //TEST
+    const response = halGet({ url:
+      "https://apig.everest.dxchub.com/evsit/omni-prospect-services/omni/service/prospects",
+    headers: { profileid: 12345, userName: "Agent@csc.com" }
+   });
+
+   void(0);
+    
   }
 }
 
