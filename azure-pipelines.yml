@@ -30,11 +30,12 @@ steps:
   - script: |
       cd lib
       sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' .npmrc
+      cp .npmrc ./dist
     displayName: '.npmrc file'
 
   - script: |
-      cd lib
-      sed -i -e 's/0.0.0/'0.0.0-alpha.$(Build.BuildNumber)'/g' dist/package.json
+      cd lib/dist
+      sed -i -e 's/0.0.0/'0.0.0-alpha.$(Build.BuildNumber)'/g' package.json
     displayName: 'Alpha version library'
     condition: eq(variables['Build.SourceBranchName'], 'master')
 
