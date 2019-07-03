@@ -28,6 +28,7 @@ steps:
     displayName: 'Test library'
 
   - script: |
+      cat ./lib/.npmrc
       sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' ./lib/.npmrc
       cat ./lib/.npmrc
     displayName: '.npmrc file'
