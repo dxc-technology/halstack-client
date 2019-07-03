@@ -41,6 +41,7 @@ steps:
       command: 'custom' # Options: install, publish, custom
       workingDir: 'lib'
       verbose: true
-      customCommand: publish --tag alpha
+      customCommand: 'publish --tag alpha'
+      customRegistry: 'useNpmrc'
     condition: eq(variables['Build.SourceBranchName'], 'master')
     # condition: eq(variables['RELEASE_OPTION'], 'release')
