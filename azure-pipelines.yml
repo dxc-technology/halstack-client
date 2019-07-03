@@ -28,6 +28,12 @@ steps:
     displayName: 'Test library'
 
   - script: |
+      cd lib
+      sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' .npmrc
+      cp .npmrc ./dist
+    displayName: '.npmrc file'
+
+  - script: |
       cd lib/dist
       sed -i -e 's/0.0.0/'0.0.0-alpha.$(Build.BuildNumber)'/g' package.json
     displayName: 'Alpha version library'
@@ -35,8 +41,11 @@ steps:
 
   - task: Npm@1
     inputs:
-      command: 'publish'
+      command: 'custom' # Options: install, publish, custom
       workingDir: 'lib/dist'
+      verbose: true
+      customCommand: 'publish --tag alpha'
+      customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
     condition: eq(variables['Build.SourceBranchName'], 'master')
     # condition: eq(variables['RELEASE_OPTION'], 'release')
