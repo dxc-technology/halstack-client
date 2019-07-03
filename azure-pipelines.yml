@@ -28,7 +28,7 @@ steps:
     displayName: 'Test library'
 
   - script: |
-      sed -i -e 's/0.0.0/'0.0.0-alpha.$Build.BuildNumber'/g' ./lib/package.json
+      sed -i -e 's/0.0.0/'0.0.0-alpha.$(Build.BuildNumber)'/g' ./lib/package.json
     displayName: 'Alpha version library'
     condition: eq(variables['Build.SourceBranchName'], 'master')
 
