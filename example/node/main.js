@@ -1,2 +1,2 @@
-require("@dxc/halstack-client");
+require("@dxc-technology/halstack-client");
 

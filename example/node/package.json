@@ -7,6 +7,6 @@
     "start": "node main.js"
   },
   "dependencies": {
-    "@dxc/halstack-client": "file:../../lib"
+    "@dxc-technology/halstack-client": "file:../../lib"
   }
 }

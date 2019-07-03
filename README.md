@@ -7,21 +7,21 @@ This SDK is released as a client-agnostic library that can be used in many diffe
 ## Installation
 
 ```sh
-npm install --save @dxc/halstack-client
+npm install --save @dxc-technology/halstack-client
 ```
 
 ### Use in Node.js
 
 ```js
 // require from the dependency the modules you need
-const { halNavigator, halResource } = require("@dxc/halstack-client");
+const { halNavigator, halResource } = require("@dxc-technology/halstack-client");
 ```
 
 ### Use in browsers
 
 ```js
 // require from the dependency the modules you need
-import { halNavigator, halResource } from "@dxc/halstack-client";
+import { halNavigator, halResource } from "@dxc-technology/halstack-client";
 ```
 
 ## Modules
