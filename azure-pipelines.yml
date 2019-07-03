@@ -29,6 +29,7 @@ steps:
 
   - script: |
       sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' ./lib/.npmrc
+      cat ./lib/.npmrc
     displayName: '.npmrc file'
 
   - script: |
