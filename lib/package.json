@@ -32,7 +32,7 @@
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "axios": "^0.19.0"
   },
   "jest": {
     "collectCoverageFrom": [
