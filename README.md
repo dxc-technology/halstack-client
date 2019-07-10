@@ -38,17 +38,20 @@ The purpose of this module is facilitating the access to the information of a gi
 This factory function will throw custom exceptions in case the resource representation passed as a parameter is not correctly formed.
 And it returns an object with the halResource prototype.
 
-### halNavigator
+### halResponse
 
-The purpose of this module is facilitating the navigation between resources using hyperlinks. This factory function expects a JSON object with the following properties as a parameter:
+The purpose of this module is exposing the information returned inside a API response. This response can be HAL or not.
 
-| Name         | Type             | Default | Description                                                                                                                                              |
-| :----------- | :--------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `url`        | `string`         | None    | URL of the resource from which the navigation should start.                                                                                              |
-| `urlPromise` | `promise:string` | None    | Promise that will resolve into a string with the URL of the resource from which the navigation should start. Use in case the url is still not available. |
-| `headers`    | `JSON Object`    | None    | Contains an object with the headers to be sent to every request to the API.                                                                              |
 
-It returns an object with the halNavigator prototype.
+ Name      | Type          | Default | Description                                                                                                                                   |
+| :-------- | :------------ | :------ | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| `body`    | `JSON Object` | None    | The message-body is the data bytes transmitted assoiciated with a http response.
+| `headers` | `JSON Object` | None    | Contains the http headers which provide information about the server and about further access to the resource identified by the Request-URI.|
+| `status` | `number` | None    |  Status codes are issued by a server in response to a client's request made to the server. It includes codes from IETF Request for Comments (RFCs).|
+
+
+
+
 
 ## Prototypes
 
@@ -71,6 +74,16 @@ It returns an object with the halNavigator prototype.
 | `getItemByFunction`   | `function:item`             | Receives a filtering function. Returns the first item object that passes the test implemented by the provided function.        |
 | `getActionByRel`      | `function:action`           | Receives a string as a parameter with the action rel. Returns the action object matching that key.                             |
 | `getActionsByMethod`  | `function:action`           | Receives a string as a parameter with the action method. Returns the an array with the action objects matching that method.    |
+
+### halResponse
+
+| Name    | Type     | Description            |
+| :------ | :------- | :--------------------- |
+| `body`   | `JSON Object` | Response message-body  |
+| `headers` | `JSON Object`    | Http headers |
+| `status` | `number`    | Https response code |
+| `type` | `String`    | Response format. Example: application/json|
+| `halResource` | `halResource` | HalResource composed using the information provided inside the http response.  |
 
 ### property
 
@@ -112,14 +125,7 @@ It returns an object with the halNavigator prototype.
 | `schema`             | `JSON Object`        | Full schema of the action.                                                       |
 | `propertiesMetadata` | `propertyMetadata[]` | Array with a propertyMetadata object per existing property in the action schema. |
 
-### halNavigator
 
-| Name                  | Type                    | Description                                                                                                                                                                                                                                                                                                                           |
-| :-------------------- | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `getHALResource`      | `function`              | Receives a callback function as a parameter. It will execute that function passing the halResource object as a parameter, once this resource is fetched.                                                                                                                                                                              |
-| `fetchLink`           | `function:halNavigator` | Receives a string with a rel name as a first parameter and returns a halNavigator object for the link with that rel. Accepts a second parameter with a callback function that will be executed once this link is fetched, passing its corresponding halResource object as a parameter.                                                |
-| `fetchItemByNumber`   | `function:halNavigator` | Receives as a first parameter position number of the item within the items array, and returns a halNavigator object for that item. Accepts a second parameter with a callback function that will be executed once this item is fetched, passing its corresponding halResource object as a parameter.                                  |
-| `fetchItemByFunction` | `function:halNavigator` | Receives a filtering function as a first parameter, and returns a halNavigator object for the first item that passes the test implemented by the provided function. Accepts a second parameter with a callback function that will be executed once this item is fetched, passing its corresponding halResource object as a parameter. |
 
 ## Develop
 
