@@ -35,7 +35,8 @@ steps:
 
   - script: |
       cd lib/dist
-      sed -i -e 's/0.0.0/'0.0.0-alpha.$(Build.BuildNumber)'/g' package.json
+      OLD_RELEASE_NUMBER=$(grep 'version' projects/dxc-ngx-cdk/package.json | grep -o '[0-9.].*[^\",]')
+      sed -i -e 's/${OLD_RELEASE_NUMBER}/'${OLD_RELEASE_NUMBER}-alpha.$(Build.BuildNumber)'/g' package.json
     displayName: 'Alpha version library'
     condition: eq(variables['Build.SourceBranchName'], 'master')
 
