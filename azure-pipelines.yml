@@ -16,43 +16,43 @@ steps:
       cd lib
       npm version major
     displayName: 'Major release'
-    condition: eq(variables['RELEASE_OPTION'], 'major')
+    condition: and(eq(variables['RELEASE_OPTION'], 'major'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version minor
     displayName: 'Minor release'
-    condition: eq(variables['RELEASE_OPTION'], 'minor')
+    condition: and(eq(variables['RELEASE_OPTION'], 'minor'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version patch
     displayName: 'Patch release'
-    condition: eq(variables['RELEASE_OPTION'], 'patch')
+    condition: and(eq(variables['RELEASE_OPTION'], 'patch'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version premajor --preid=$(PRERELEASE_TYPE)
     displayName: 'Premajor release'
-    condition: eq(variables['RELEASE_OPTION'], 'premajor')
+    condition: and(eq(variables['RELEASE_OPTION'], 'premajor'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
   
   - script: |
       cd lib
       npm version preminor --preid=$(PRERELEASE_TYPE)
     displayName: 'Preminor release'
-    condition: eq(variables['RELEASE_OPTION'], 'preminor')
+    condition: and(eq(variables['RELEASE_OPTION'], 'preminor'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version prepatch --preid=$(PRERELEASE_TYPE)
     displayName: 'Prepatch release'
-    condition: eq(variables['RELEASE_OPTION'], 'prepatch')
+    condition: and(eq(variables['RELEASE_OPTION'], 'prepatch'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version prerelease --preid=$(PRERELEASE_TYPE)
     displayName: 'Prerelease release'
-    condition: eq(variables['RELEASE_OPTION'], 'prerelease')
+    condition: and(eq(variables['RELEASE_OPTION'], 'prerelease'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
@@ -100,7 +100,7 @@ steps:
       customCommand: 'publish'
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
-    condition: ne(variables['RELEASE_OPTION'], 'no-release')
+    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - task: GitHubRelease@0
     inputs:
