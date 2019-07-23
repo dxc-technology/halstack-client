@@ -80,7 +80,7 @@ steps:
       OLD_RELEASE_NUMBER=$(grep 'version' package.json | grep -o '[0-9.].*[^\",]')
       sed -i -e 's/'$OLD_RELEASE_NUMBER/$OLD_RELEASE_NUMBER-alpha.$(Build.BuildNumber)'/g' package.json
     displayName: 'Alpha version library'
-    condition: eq(variables['Build.SourceBranchName'], 'master')
+    condition: and(eq(variables['RELEASE_OPTION'], 'no-release'), eq(variables['Build.SourceBranchName'], 'master'))
 
   - task: Npm@1
     inputs:
@@ -90,7 +90,7 @@ steps:
       customCommand: 'publish --tag alpha'
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
-    condition: eq(variables['Build.SourceBranchName'], 'master')
+    condition: and(eq(variables['RELEASE_OPTION'], 'no-release'), eq(variables['Build.SourceBranchName'], 'master'))
 
   - task: Npm@1
     inputs:
