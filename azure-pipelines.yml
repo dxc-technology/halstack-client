@@ -13,6 +13,12 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
+      git checkout -b $(Build.SourceBranchName)
+      git pull origin $(Build.SourceBranchName)
+    displayName: 'Pulling content'
+    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+
+  - script: |
       cd lib
       npm version major
     displayName: 'Major release'
