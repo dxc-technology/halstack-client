@@ -109,3 +109,8 @@ steps:
       target: '$(Build.SourceVersion)'
       tagSource: 'auto'
       gitHubConnection: 'GitHub'
+
+  - script: |
+      git push origin $(Build.SourceBranchName)
+    displayName: 'Pushing updated package.json'
+    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
