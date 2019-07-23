@@ -14,6 +14,48 @@ steps:
 
   - script: |
       cd lib
+      npm version major
+    displayName: 'Major release'
+    condition: eq(variables['RELEASE_OPTION'], 'major')
+
+  - script: |
+      cd lib
+      npm version minor
+    displayName: 'Minor release'
+    condition: eq(variables['RELEASE_OPTION'], 'minor')
+
+  - script: |
+      cd lib
+      npm version patch
+    displayName: 'Patch release'
+    condition: eq(variables['RELEASE_OPTION'], 'patch')
+
+  - script: |
+      cd lib
+      npm version premajor --preid=$(PRERELEASE_TYPE)
+    displayName: 'Premajor release'
+    condition: eq(variables['RELEASE_OPTION'], 'premajor')
+  
+  - script: |
+      cd lib
+      npm version preminor --preid=$(PRERELEASE_TYPE)
+    displayName: 'Preminor release'
+    condition: eq(variables['RELEASE_OPTION'], 'preminor')
+
+  - script: |
+      cd lib
+      npm version prepatch --preid=$(PRERELEASE_TYPE)
+    displayName: 'Prepatch release'
+    condition: eq(variables['RELEASE_OPTION'], 'prepatch')
+
+  - script: |
+      cd lib
+      npm version prerelease --preid=$(PRERELEASE_TYPE)
+    displayName: 'Prerelease release'
+    condition: eq(variables['RELEASE_OPTION'], 'prerelease')
+
+  - script: |
+      cd lib
       npm install
     displayName: 'Install dependencies'
 
@@ -40,6 +82,11 @@ steps:
     displayName: 'Alpha version library'
     condition: eq(variables['Build.SourceBranchName'], 'master')
 
+  - script: |
+      cd lib
+    displayName: 'Alpha version library'
+    condition: eq(variables['Build.SourceBranchName'], 'master')
+
   - task: Npm@1
     inputs:
       command: 'custom' # Options: install, publish, custom
@@ -49,7 +96,17 @@ steps:
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
     condition: eq(variables['Build.SourceBranchName'], 'master')
-    # condition: eq(variables['RELEASE_OPTION'], 'release')
+
+  - task: Npm@1
+    inputs:
+      command: 'custom' # Options: install, publish, custom
+      workingDir: 'lib/dist'
+      verbose: true
+      customCommand: 'publish'
+      customRegistry: 'useNpmrc'
+      publishEndpoint: 'NpmJs'
+    condition: ne(variables['RELEASE_OPTION'], 'no-release')
+
   - task: GitHubRelease@0
     inputs:
       repositoryName: '$(Build.Repository.Name)'
