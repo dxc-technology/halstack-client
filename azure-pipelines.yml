@@ -82,11 +82,6 @@ steps:
     displayName: 'Alpha version library'
     condition: eq(variables['Build.SourceBranchName'], 'master')
 
-  - script: |
-      cd lib
-    displayName: 'Alpha version library'
-    condition: eq(variables['Build.SourceBranchName'], 'master')
-
   - task: Npm@1
     inputs:
       command: 'custom' # Options: install, publish, custom
