@@ -13,6 +13,8 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
+      git config --global user.email 'azure@dxc.com'
+      git config --global user.name 'Azure User'
       git checkout -b $(Build.SourceBranchName)
       git reset --hard origin/$(Build.SourceBranchName)
       git pull origin $(Build.SourceBranchName)
