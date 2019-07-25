@@ -24,42 +24,49 @@ steps:
   - script: |
       cd lib
       npm version major
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Major release'
     condition: and(eq(variables['RELEASE_OPTION'], 'major'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version minor
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Minor release'
     condition: and(eq(variables['RELEASE_OPTION'], 'minor'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version patch
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Patch release'
     condition: and(eq(variables['RELEASE_OPTION'], 'patch'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version premajor --preid=$(PRERELEASE_TYPE)
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Premajor release'
     condition: and(eq(variables['RELEASE_OPTION'], 'premajor'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
   
   - script: |
       cd lib
       npm version preminor --preid=$(PRERELEASE_TYPE)
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Preminor release'
     condition: and(eq(variables['RELEASE_OPTION'], 'preminor'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version prepatch --preid=$(PRERELEASE_TYPE)
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Prepatch release'
     condition: and(eq(variables['RELEASE_OPTION'], 'prepatch'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       cd lib
       npm version prerelease --preid=$(PRERELEASE_TYPE)
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Prerelease release'
     condition: and(eq(variables['RELEASE_OPTION'], 'prerelease'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
@@ -125,7 +132,6 @@ steps:
       git add lib/package.json
       git commit -m 'New release!'
       git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
-      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Pushing updated package.json'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
