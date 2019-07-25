@@ -108,6 +108,11 @@ steps:
       publishEndpoint: 'NpmJs'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
+  - script: |
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
+    displayName: 'Pushing updated package.json'
+    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+
   - task: GitHubRelease@0
     inputs:
       repositoryName: '$(Build.Repository.Name)'
@@ -115,8 +120,3 @@ steps:
       target: '$(Build.SourceVersion)'
       tagSource: 'auto'
       gitHubConnection: 'GitHub'
-
-  - script: |
-      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
-    displayName: 'Pushing updated package.json'
-    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
