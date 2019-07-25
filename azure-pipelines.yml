@@ -13,6 +13,10 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
+      touch ~/.netrc
+      echo 'machine github.dxc.com' >> ~/.netrc
+      echo 'login $(GITHUB_USER)' >> ~/.netrc
+      echo 'password $(GITHUB_TOKEN)' >> ~/.netrc
       git config --global user.email 'azure@dxc.com'
       git config --global user.name 'Azure User'
       git checkout -b $(Build.SourceBranchName)
@@ -124,10 +128,11 @@ steps:
   - script: |
       git add lib/package.json
       git commit -m 'New release!'
-      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
-      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git
+      git push origin $(Build.SourceBranchName)
+      git push --tags
     displayName: 'Pushing updated package.json'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+    # git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName) 
 
   - task: GitHubRelease@0
     inputs:
