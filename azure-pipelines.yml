@@ -122,10 +122,10 @@ steps:
     condition: and(or(eq(variables['RELEASE_OPTION'], 'major'), eq(variables['RELEASE_OPTION'], 'minor'), eq(variables['RELEASE_OPTION'], 'patch')), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
-      git push --tags
       git add lib/package.json
       git commit -m 'New release!'
       git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Pushing updated package.json'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
