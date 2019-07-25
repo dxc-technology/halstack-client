@@ -109,7 +109,17 @@ steps:
       customCommand: 'publish --tag $(PRERELEASE_TYPE)'
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
-    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+    condition: and(eq(variables['RELEASE_OPTION'], 'premajor', 'preminor', 'prepatch', 'prerelease'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+
+  - task: Npm@1
+    inputs:
+      command: 'custom' # Options: install, publish, custom
+      workingDir: 'lib/dist'
+      verbose: true
+      customCommand: 'publish'
+      customRegistry: 'useNpmrc'
+      publishEndpoint: 'NpmJs'
+    condition: and(eq(variables['RELEASE_OPTION'], 'major', 'minor', 'patch'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       git push --tags
