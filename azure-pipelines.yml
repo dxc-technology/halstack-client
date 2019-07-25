@@ -125,7 +125,7 @@ steps:
       git add lib/package.json
       git commit -m 'New release!'
       git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
-      git push --tags
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git
     displayName: 'Pushing updated package.json'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
