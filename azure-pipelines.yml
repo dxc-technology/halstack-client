@@ -109,7 +109,7 @@ steps:
       customCommand: 'publish --tag $(PRERELEASE_TYPE)'
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
-    condition: and(eq(variables['RELEASE_OPTION'], 'premajor', 'preminor', 'prepatch', 'prerelease'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+    condition: and(or(eq(variables['RELEASE_OPTION'], 'premajor'), eq(variables['RELEASE_OPTION'], 'preminor'), eq(variables['RELEASE_OPTION'], 'prepatch'), eq(variables['RELEASE_OPTION'], 'prerelease')), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - task: Npm@1
     inputs:
@@ -119,7 +119,7 @@ steps:
       customCommand: 'publish'
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
-    condition: and(eq(variables['RELEASE_OPTION'], 'major', 'minor', 'patch'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+    condition: and(or(eq(variables['RELEASE_OPTION'], 'major'), eq(variables['RELEASE_OPTION'], 'minor'), eq(variables['RELEASE_OPTION'], 'patch')), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - script: |
       git push --tags
