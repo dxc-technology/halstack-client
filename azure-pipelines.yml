@@ -80,6 +80,7 @@ steps:
 
   - script: |
       cd lib
+      RELEASE_NUMBER=$(grep 'version' package.json | grep -o '[0-9.].*[^\",]')
       sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' .npmrc
       cp .npmrc ./dist
     displayName: '.npmrc file'
@@ -125,14 +126,32 @@ steps:
       git add lib/package.json
       git commit -m 'New release!'
       git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
-      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git --tags
     displayName: 'Pushing updated package.json'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - task: GitHubRelease@0
     inputs:
-      repositoryName: '$(Build.Repository.Name)'
+      gitHubConnection: 'GitHub'
+      repositoryName: 'dxc-technology/dxc-halstack-client'
       action: 'create'
       target: '$(Build.SourceVersion)'
       tagSource: 'auto'
+      title: '$(RELEASE_NUMBER)'
+      releaseNotesSource: 'input'
+      releaseNotes: 'Test'
+      addChangeLog: false
+    condition: and(or(eq(variables['RELEASE_OPTION'], 'major'), eq(variables['RELEASE_OPTION'], 'minor'), eq(variables['RELEASE_OPTION'], 'patch')), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
+
+  - task: GitHubRelease@0
+    inputs:
       gitHubConnection: 'GitHub'
+      repositoryName: 'dxc-technology/dxc-halstack-client'
+      action: 'create'
+      target: '$(Build.SourceVersion)'
+      tagSource: 'auto'
+      title: '$(RELEASE_NUMBER)'
+      releaseNotesSource: 'input'
+      releaseNotes: 'Test'
+      addChangeLog: false
+      isPreRelease: true
+    condition: and(or(eq(variables['RELEASE_OPTION'], 'premajor'), eq(variables['RELEASE_OPTION'], 'preminor'), eq(variables['RELEASE_OPTION'], 'prepatch'), eq(variables['RELEASE_OPTION'], 'prerelease')), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
