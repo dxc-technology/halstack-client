@@ -13,10 +13,6 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
-      touch ~/.netrc
-      echo 'machine github.dxc.com' >> ~/.netrc
-      echo 'login $(GITHUB_USER)' >> ~/.netrc
-      echo 'password $(GITHUB_TOKEN)' >> ~/.netrc
       git config --global user.email 'azure@dxc.com'
       git config --global user.name 'Azure User'
       git checkout -b $(Build.SourceBranchName)
