@@ -1,6 +1,6 @@
 {
   "name": "@dxc-technology/halstack-client",
-  "version": "0.0.0",
+  "version": "1.0.0-beta.0",
   "description": "DXC Technology Halstack Client",
   "main": "./dist/main.js",
   "scripts": {
