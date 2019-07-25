@@ -80,7 +80,6 @@ steps:
 
   - script: |
       cd lib
-      RELEASE_NUMBER=$(grep 'version' package.json | grep -o '[0-9.].*[^\",]')
       sed -i -e 's/<TOKEN>/'$(NPM_TOKEN)'/g' .npmrc
       cp .npmrc ./dist
     displayName: '.npmrc file'
@@ -93,6 +92,7 @@ steps:
     condition: and(eq(variables['RELEASE_OPTION'], 'no-release'), eq(variables['Build.SourceBranchName'], 'master'))
   
   - script: |
+      RELEASE_NUMBER=$(grep 'version' lib/package.json | grep -o '[0-9.].*[^\",]')
       git add lib/package.json
       git commit -m 'New release!'
       git tag $(RELEASE_NUMBER)
