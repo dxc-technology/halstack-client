@@ -91,6 +91,13 @@ steps:
       sed -i -e 's/'$OLD_RELEASE_NUMBER/$OLD_RELEASE_NUMBER-alpha.$(Build.BuildNumber)'/g' package.json
     displayName: 'Alpha version library'
     condition: and(eq(variables['RELEASE_OPTION'], 'no-release'), eq(variables['Build.SourceBranchName'], 'master'))
+  
+  - script: |
+      git add lib/package.json
+      git commit -m 'New release!'
+      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
+    displayName: 'Pushing updated package.json'
+    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - task: Npm@1
     inputs:
@@ -121,13 +128,6 @@ steps:
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
     condition: and(or(eq(variables['RELEASE_OPTION'], 'major'), eq(variables['RELEASE_OPTION'], 'minor'), eq(variables['RELEASE_OPTION'], 'patch')), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
-
-  - script: |
-      git add lib/package.json
-      git commit -m 'New release!'
-      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
-    displayName: 'Pushing updated package.json'
-    condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
   - task: GitHubRelease@0
     inputs:
