@@ -106,7 +106,7 @@ steps:
       command: 'custom' # Options: install, publish, custom
       workingDir: 'lib/dist'
       verbose: true
-      customCommand: 'publish'
+      customCommand: 'publish --tag $(PRERELEASE_TYPE)'
       customRegistry: 'useNpmrc'
       publishEndpoint: 'NpmJs'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
