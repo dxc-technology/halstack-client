@@ -92,11 +92,12 @@ steps:
     condition: and(eq(variables['RELEASE_OPTION'], 'no-release'), eq(variables['Build.SourceBranchName'], 'master'))
   
   - script: |
-      RELEASE_NUMBER=$(grep 'version' lib/package.json | grep -o '[0-9.].*[^\",]')
+      RELEASE_NUMBER=$(grep 'version' lib/dist/package.json | grep -o '[0-9.].*[^\",]')
       git add lib/package.json
       git commit -m 'New release!'
-      git tag $(RELEASE_NUMBER)
-      git push https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git $(Build.SourceBranchName)
+      git remote add originToken https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git
+      git push originToken $(Build.SourceBranchName)
+      git push originToken --tags
     displayName: 'Pushing updated package.json'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
