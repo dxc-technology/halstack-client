@@ -60,6 +60,7 @@ steps:
   - script: |
       cd lib
       npm version prerelease --preid=$(PRERELEASE_TYPE)
+      git tag
     displayName: 'Prerelease release'
     condition: and(eq(variables['RELEASE_OPTION'], 'prerelease'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
 
@@ -95,8 +96,10 @@ steps:
       RELEASE_NUMBER=$(grep 'version' lib/dist/package.json | grep -o '[0-9.].*[^\",]')
       git add lib/package.json
       git commit -m 'New release!'
+      git tag
       git remote add originToken https://$(GITHUB_TOKEN)@github.com/dxc-technology/dxc-halstack-client.git
       git push originToken $(Build.SourceBranchName)
+      git tag
       git push originToken --tags
     displayName: 'Pushing updated package.json'
     condition: and(ne(variables['RELEASE_OPTION'], 'no-release'), eq(variables['PASSWORD'], variables['PASSWORD_VERIF']))
