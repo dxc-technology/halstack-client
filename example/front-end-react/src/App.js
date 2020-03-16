@@ -511,7 +511,11 @@ const itemResource = {
           "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
         title: "Update User",
         schema: {
-          properties: {}
+          properties: {
+            "user-name": {
+              type: "string"
+            }
+          }
         }
       }
     ],
