@@ -76,6 +76,7 @@ steps:
   - script: |
       cd lib
       echo "Add the tests here"
+      npm run test
     displayName: 'Test library'
 
   - script: |
