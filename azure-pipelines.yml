@@ -75,9 +75,13 @@ steps:
 
   - script: |
       cd lib
-      echo "Add the tests here"
-      npm run test
+      npm run test:coverage
     displayName: 'Test library'
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: $(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml
 
   - script: |
       cd lib
