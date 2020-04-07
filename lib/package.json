@@ -13,7 +13,8 @@
     "start": "rollup -c -w",
     "build": "npm run bundle && npm run copy",
     "test": "jest",
-    "test:watch": "npm test -- --watch --coverage"
+    "test:watch": "npm test -- --watch --coverage",
+    "test:coverage": "npm test -- --coverage --coverageReporters=cobertura"
   },
   "author": "Jesus Suarez Ardid",
   "license": "ISC",
