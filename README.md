@@ -112,7 +112,7 @@ This module is a http client which takes care of handing out parsed HalResponses
 | `post`             | `function:Promise(HalResponse)` | Receives a { url, body, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `delete`           | `function:Promise(HalResponse)` | Receives a { url, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler.       |
 
-## Develop
+## Development Setup
 
 In the first place, clone this repository.
 
