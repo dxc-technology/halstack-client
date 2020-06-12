@@ -38,6 +38,8 @@ The purpose of this module is facilitating the access to the information of a gi
 
 It returns a [HalResource Object](#halresource-object), encapsulating the original HAL Resource Representation and including a set of functions that will allow you to access the data from the resource in a declarative manner, without having to fully understand the details of how HAL resource representation is structured.
 
+The HalResource can also be used to help developers to create a compliant HaleRource representation to be included in a Hal response, exposing functions to add different sections that tipically can be found in a resource.  
+
 ### HalResource Object
 
 | Name                     | Type                       | Description                                                                                                                         |
@@ -56,6 +58,9 @@ It returns a [HalResource Object](#halresource-object), encapsulating the origin
 | `isPropertyRequired`     | `(String)=>Bool`           | Receives the key of a property. Returns true if it exists within the "\_options.required" array.                                    |
 | `getSchemaProperties`    | `()=>Object[]`             | Returns an array of the original schema objects for properties (adding "key"). Taken from the "\_options.properties" object.        |
 | `getSchemaProperty`      | `(String)=>Object`         | Receives the key of a property. Returns the property's schema object (adding "key") if exists within "\_options.properties" object. |
+| `addLink`      | `(String)=>void`         | Receives an object as parameter. This object can contain the usual link properties as { rel, name, href, title } where rel and href are required. The obect will be added to the  "\links" section using rela as key  |
+
+
 
 ### HalInteraction Object
 
