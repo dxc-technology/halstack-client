@@ -14,7 +14,8 @@
     "build": "npm run bundle && npm run copy",
     "test": "jest",
     "test:watch": "npm test -- --watch --coverage",
-    "test:coverage": "npm test -- --coverage --coverageReporters=cobertura"
+    "test:coverage": "npm test -- --coverage --coverageReporters=cobertura",
+    "test:coverage-dashboard": "npm test --collect-coverage"
   },
   "author": "Jesus Suarez Ardid",
   "license": "ISC",
@@ -41,15 +42,5 @@
   },
   "dependencies": {
     "axios": "^0.19.0"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js}",
-      "!**/node_modules/**"
-    ],
-    "reporters": [
-      "default",
-      "jest-junit"
-    ]
   }
 }
