@@ -1,6 +1,6 @@
 # Halstack Client for JavaScript
 
-Halstack Client for JavaScript enables developers to easily work with hypermedia-based APIs in a declarative manner. It offers a set of functionalities to facilitate the navigation between hypermedia resources and get access to their properties dynamically, based on the HAL and JSON Hyperschema specifications.
+Halstack Client for JavaScript enables developers to easily work with hypermedia-based APIs in a declarative manner. It offers a set of functionalities to facilitate the navigation between hypermedia resources and get access to their properties dynamically, based on the JSON:API and JSON Hyperschema specifications.
 
 This SDK is released as a client-agnostic library that can be used both in browser applications (such as Vanilla JS, React or Angular applications) or backend applications (node.js applications or AWS Lambdas).
 
@@ -38,6 +38,8 @@ The purpose of this module is facilitating the access to the information of a gi
 
 It returns a [HalResource Object](#halresource-object), encapsulating the original HAL Resource Representation and including a set of functions that will allow you to access the data from the resource in a declarative manner, without having to fully understand the details of how HAL resource representation is structured.
 
+The HalResource can also be used to help developers to create a compliant HaleRource representation to be included in a Hal response, exposing functions to add different sections that tipically can be found in a resource.  
+
 ### HalResource Object
 
 | Name                     | Type                       | Description                                                                                                                         |
@@ -56,6 +58,16 @@ It returns a [HalResource Object](#halresource-object), encapsulating the origin
 | `isPropertyRequired`     | `(String)=>Bool`           | Receives the key of a property. Returns true if it exists within the "\_options.required" array.                                    |
 | `getSchemaProperties`    | `()=>Object[]`             | Returns an array of the original schema objects for properties (adding "key"). Taken from the "\_options.properties" object.        |
 | `getSchemaProperty`      | `(String)=>Object`         | Receives the key of a property. Returns the property's schema object (adding "key") if exists within "\_options.properties" object. |
+| `addLink`      | `(Object)=>void`         | Receives an object as parameter. This object can contain the usual link properties as { rel, name, href, title } where rel and href are required. The obect will be added to the  "\links" section using rel as key  |
+| `addTitle`      | `(String)=>void`         | Assign the parameter received to the resource title in  "\_options.title |
+| `addItem`      | `(Object)=>void`         |  Add the object received as parameter as a resource _link item |
+| `addItems`      | `(Array<Object>)=>void`         | Add the every object in the list received as parameter as a resource _link item. |
+| `addProperties`      | `(Object)=>void`         | Add the key:values found in the object received as parameter as resource properties.  |
+| `addPropertiesSchema`      | `(Object)=>void`         | Add every object received as parameter as property under the _options.properties section|
+| `addInteraction`      | `(Object)=>void`         | Add the object received as parameter under the options.link section |
+| `addOptions`      | `(Object)=>void`         | It receives an object as parameter. The funciton will look for links, properties, title and rquired keys and add them under the options section.   |
+
+
 
 ### HalInteraction Object
 
@@ -112,7 +124,7 @@ This module is a http client which takes care of handing out parsed HalResponses
 | `post`             | `function:Promise(HalResponse)` | Receives a { url, body, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `delete`           | `function:Promise(HalResponse)` | Receives a { url, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler.       |
 
-## Development Setup
+## Develop
 
 In the first place, clone this repository.
 
