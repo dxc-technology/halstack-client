@@ -49,7 +49,7 @@ The HalResource can also be used to help developers to create a compliant HaleRo
 | `getInteractions`        | `()=>HalInteraction[]`     | Returns an array of [HalInteraction](#halinteraction-object) objects. Taken from the "\_options.links" array.                       |
 | `getInteraction`         | `(String)=>HalInteraction` | Receives a string with the rel of the interaction. Returns the [HalInteraction](#halinteraction-object) object.                     |
 | `getItems`               | `()=>Object[]`             | Returns an array of the original item link objects. Taken from the "\_links.item" array.                                            |
-| `getInteraction`         | `(Number)=>Object`         | Receives the index of the item. Returns the item object.                                                                            |
+| `getItem`         | `(Number)=>Object`         | Receives the index of the item. Returns the item object.                                                                            |
 | `getLinks`               | `()=>Object[]`             | Returns an array of the original link objects (adding the "rel"), ignoring "item" link. Taken from the "\_links" object.            |
 | `getLink`                | `(String)=>Object`         | Receives a string with the rel of the link. Returns the link object (adding the "rel").                                             |
 | `getProperties`          | `()=>Object[]`             | Returns an array of [HalProperty](#halproperty-object) objects. Taken from the resource root level properties.                      |
@@ -59,13 +59,15 @@ The HalResource can also be used to help developers to create a compliant HaleRo
 | `getSchemaProperties`    | `()=>Object[]`             | Returns an array of the original schema objects for properties (adding "key"). Taken from the "\_options.properties" object.        |
 | `getSchemaProperty`      | `(String)=>Object`         | Receives the key of a property. Returns the property's schema object (adding "key") if exists within "\_options.properties" object. |
 | `addLink`      | `(Object)=>void`         | Receives an object as parameter. This object can contain the usual link properties as { rel, name, href, title } where rel and href are required. The obect will be added to the  "\links" section using rel as key  |
+| `addLinks      | `(Object)=>void`         | Receives an object as parameter. This object can contain the usual link properties as { rel, name, href, title } where rel and href are required. The obect will be added to the  "\links" section using rel as key  |
 | `addTitle`      | `(String)=>void`         | Assign the parameter received to the resource title in  "\_options.title |
 | `addItem`      | `(Object)=>void`         |  Add the object received as parameter as a resource _link item |
-| `addItems`      | `(Array<Object>)=>void`         | Add the every object in the list received as parameter as a resource _link item. |
+| `addItems`      | `(Object[])=>void`         | Add every object in the list received as parameter as a resource _link item. |
 | `addProperties`      | `(Object)=>void`         | Add the key:values found in the object received as parameter as resource properties.  |
-| `addPropertiesSchema`      | `(Object)=>void`         | Add every object received as parameter as property under the _options.properties section|
-| `addInteraction`      | `(Object)=>void`         | Add the object received as parameter under the options.link section |
-| `addOptions`      | `(Object)=>void`         | It receives an object as parameter. The funciton will look for links, properties, title and rquired keys and add them under the options section.   |
+| `addOptionsProperties`      | `(Object)=>void`         | Add every property received in parameter as property under the _options.properties section|
+| `addOptionsProperty`      | `(Object)=>void`         | Add the property ({key: schema}) received in parameter as property under the _options.properties section|
+| `addInteraction`      | `(Object)=>void`         | Add the object received as parameter ({rel: Interaction}) under the options.link section |
+| `addOptions`      | `(Object)=>void`         | It receives an object as parameter and add interactions , properties, required and title if those sections are found as obkect keys.     |
 
 
 
