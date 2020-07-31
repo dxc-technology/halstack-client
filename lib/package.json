@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/dxc-technology/dxc-halstack-client"
   },
-  "main": "./main.js",
+  "main": "./src/main.js",
   "scripts": {
     "bundle": "rollup -c",
     "copy": "node ./scripts/build/copy-distribution-files.js",
