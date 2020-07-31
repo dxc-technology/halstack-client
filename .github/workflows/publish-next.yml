@@ -31,6 +31,8 @@ jobs:
       run: |
         sed -i "s#\"version\": \"0.0.0\"#\"version\": \"0.0.0-${GITHUB_SHA:0:7}\"#" ./lib/package.json
         cd lib
+        npm whoami
+        npm set registry https://registry.npmjs.org/
         npm publish --tag next --access public
       env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}

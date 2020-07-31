@@ -1,8 +1,8 @@
-name: Publish Next Version
+name: Publish Release
 
 on:
-  push:
-    branches: [ master ]
+  release:
+    types: [published]
 
 jobs:
   build:
