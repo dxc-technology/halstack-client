@@ -120,7 +120,7 @@ This module is a http client which takes care of handing out parsed HalResponses
 | :----------------- | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
 | `setGlobalHeaders` | `function`                      | Receives a headers object that will be used for all http requests done with this module.                                      |
 | `get`              | `function:Promise(HalResponse)` | Receives a { url, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler.       |
-| `options`          | `function:Promise(response)`    | Receives a { url, headers } object as a parameter. Returns a promise with the options.                                        |
+| `options`          | `function:Promise(HalResponse)` | Receives a { url, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler.       |
 | `patch`            | `function:Promise(HalResponse)` | Receives a { url, body, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `post`             | `function:Promise(HalResponse)` | Receives a { url, body, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `del`              | `function:Promise(HalResponse)` | Receives a { url, headers } object as a parameter. Returns a promise and will pass a HalResponse object to the handler.       |
