@@ -1,4 +1,4 @@
-# Halstack Client for JavaScript
+# Halstack Client for JavaScript !!
 
 Halstack Client for JavaScript enables developers to easily work with hypermedia-based APIs in a declarative manner. It offers a set of functionalities to facilitate the navigation between hypermedia resources and get access to their properties dynamically, based on the HAL and JSON Hyperschema specifications.
 
