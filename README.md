@@ -123,6 +123,7 @@ This module is a HTTP client which takes care of handing out parsed `HalResponse
 | `options`          | `function:Promise(HalResponse)` | Receives a `{ url, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler.       |
 | `patch`            | `function:Promise(HalResponse)` | Receives a `{ url, body, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `post`             | `function:Promise(HalResponse)` | Receives a `{ url, body, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
+| `put`              | `function:Promise(HalResponse)` | Receives a `{ url, body, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `del`              | `function:Promise(HalResponse)` | Receives a `{ url, headers }` object as a parameter. Returns a promise and will pass a `HalResponse` object to the handler.       |
 
 ## Develop
