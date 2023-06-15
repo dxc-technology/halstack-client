@@ -123,47 +123,9 @@ This module is a HTTP client which takes care of handing out parsed `HalResponse
 | `options`          | `function:Promise(HalResponse)` | Receives a `{ url, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler.       |
 | `patch`            | `function:Promise(HalResponse)` | Receives a `{ url, body, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `post`             | `function:Promise(HalResponse)` | Receives a `{ url, body, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
+| `put`              | `function:Promise(HalResponse)` | Receives a `{ url, body, headers }` object as a parameter. Returns a promise and will pass a HalResponse object to the handler. |
 | `del`              | `function:Promise(HalResponse)` | Receives a `{ url, headers }` object as a parameter. Returns a promise and will pass a `HalResponse` object to the handler.     |
 
-## Develop
-
-In the first place, clone this repository.
-
-```bash
-git clone https://github.com/dxc-technology/dxc-halstack-client.git
-```
-
-Local development is broken into two parts, related to the `lib/example` folders.
-
-First, within the `lib` folder, run rollup to watch your `src/` module and automatically recompile it into `dist/` whenever you make changes.
-
-```bash
-cd lib
-npm install
-npm start # runs rollup with watch flag
-```
-
-The second part will be running the examples linked to the local version of your module.
-
-### React example
-
-```bash
-# (in another tab)
-cd example/front-end-react
-npm install
-npm start # runs create-react-app dev server
-```
-
-Now, anytime you make a change to your library in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
-
-### Node example
-
-```bash
-# (in another tab)
-cd example/node
-npm install
-npm start # runs node application
-```
 
 # License
 
@@ -171,12 +133,4 @@ See Halstack Client License [here](./LICENSE)
 
 ## To Do
 
-RESOURCE:
-
-- Is property patchable (Interaction or property)
-- Status Report
-
-RESPONSE:
-
-- X-Modified headers
-- X-Delete headers
+See our [issues](https://github.com/dxc-technology/halstack-client/issues)
