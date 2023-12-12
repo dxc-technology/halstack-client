@@ -1,8 +1,6 @@
-name: Publish Next Version
+name: Build Working Version
 
-on:
-  push:
-    branches: [ master ]
+on: push
 
 jobs:
   build:
@@ -25,12 +23,4 @@ jobs:
       run: cd lib && npm run build
     
     - name: Test library
-      run: cd lib && npm run test:coverage
-      
-    - name: Publish NEXT version to npm
-      run: |
-        sed -i "s#\"version\": \"0.0.0\"#\"version\": \"0.0.0-${GITHUB_SHA:0:7}\"#" ./lib/dist/package.json
-        cd lib/dist
-        npm publish --tag next --access public
-      env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+      run: cd lib && npm run test:coverage      
