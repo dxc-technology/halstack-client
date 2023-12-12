@@ -7,12 +7,13 @@
     "url": "https://github.com/dxc-technology/dxc-halstack-client"
   },
   "main": "./main.js",
+  "type": "module",
   "scripts": {
     "bundle": "rollup -c",
     "copy": "node ./scripts/build/copy-distribution-files.js",
     "start": "rollup -c -w",
     "build": "npm run bundle && npm run copy",
-    "test": "jest",
+    "test": "jest --transformIgnorePatterns node_modules/(?!axios)/",
     "test:watch": "npm test -- --watch --coverage",
     "test:coverage": "npm test -- --coverage --coverageReporters=cobertura",
     "test:coverage-dashboard": "npm test --collect-coverage"
@@ -39,6 +40,6 @@
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^1.6.2"
   }
 }
