@@ -1,0 +1,7322 @@
+{
+  "links": [
+    {
+      "title": "Inquire a Quote ID",
+      "method": "GET",
+      "href": "https://alb-external.sandbox-1012.hub-51.sandbox.assure.dxc.com/pointin-wc-quotes/policies/V0NWMDAxOTI0NjAwMDAwNTAwU0M=",
+      "rel": "fetch",
+      "schema": {
+        "properties": {
+          "goPaperless": {
+            "type": "boolean"
+          },
+          "quoteExpirationDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "premiumDiscount": {
+            "type": "string"
+          },
+          "renewalPayPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          },
+          "voluntaryBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "isNCCISwitchOn": {
+            "type": "boolean"
+          },
+          "employersLiabilityPremium": {
+            "type": "string"
+          },
+          "voluntaryCompensation": {
+            "type": "string"
+          },
+          "depositPremiumAmount": {
+            "type": "string"
+          },
+          "totalCommission": {
+            "type": "string"
+          },
+          "branch": {
+            "type": "string"
+          },
+          "userID": {
+            "type": "string"
+          },
+          "renewalOption": {
+            "oneOf": [
+              {
+                "title": "Alright For Agent To Renew",
+                "enum": ["0"]
+              },
+              {
+                "title": "Computer Renew",
+                "enum": ["1"]
+              },
+              {
+                "title": "Alright For Home Office To Renew",
+                "enum": ["2"]
+              },
+              {
+                "title": "Already Renewed",
+                "enum": ["3"]
+              },
+              {
+                "title": "Agent Issued First Policy, Computer To Renew",
+                "enum": ["4"]
+              },
+              {
+                "title": "Non-Renewal With A Notice",
+                "enum": ["7"]
+              },
+              {
+                "title": "Non-Renewal Without A Notice",
+                "enum": ["8"]
+              }
+            ],
+            "type": ""
+          },
+          "commissionOverridePercentage": {
+            "type": "string"
+          },
+          "employersLiabilityLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/1000",
+                "enum": ["100/100/1000"]
+              },
+              {
+                "title": "100/100/10000",
+                "enum": ["100/100/10000"]
+              },
+              {
+                "title": "100/100/2000",
+                "enum": ["100/100/2000"]
+              },
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "100/100/5000",
+                "enum": ["100/100/5000"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "1000/1000/2000",
+                "enum": ["1000/1000/2000"]
+              },
+              {
+                "title": "1000/1000/5000",
+                "enum": ["1000/1000/5000"]
+              },
+              {
+                "title": "2000/2000/2000",
+                "enum": ["2000/2000/2000"]
+              },
+              {
+                "title": "500/500/1000",
+                "enum": ["500/500/1000"]
+              },
+              {
+                "title": "500/500/10000",
+                "enum": ["500/500/10000"]
+              },
+              {
+                "title": "500/500/2000",
+                "enum": ["500/500/2000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              },
+              {
+                "title": "500/500/5000",
+                "enum": ["500/500/5000"]
+              },
+              {
+                "title": "5000/5000/5000",
+                "enum": ["5000/5000/5000"]
+              }
+            ],
+            "type": "string"
+          },
+          "state": {
+            "oneOf": [
+              {
+                "title": "Alabama",
+                "enum": ["AL"]
+              },
+              {
+                "title": "Alaska",
+                "enum": ["AK"]
+              },
+              {
+                "title": "Arizona",
+                "enum": ["AZ"]
+              },
+              {
+                "title": "Arkansas",
+                "enum": ["AR"]
+              },
+              {
+                "title": "California",
+                "enum": ["CA"]
+              },
+              {
+                "title": "Colorado",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Connecticut",
+                "enum": ["CT"]
+              },
+              {
+                "title": "Delaware",
+                "enum": ["DE"]
+              },
+              {
+                "title": "District of Columbia",
+                "enum": ["DC"]
+              },
+              {
+                "title": "Florida",
+                "enum": ["FL"]
+              },
+              {
+                "title": "Georgia",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Guam",
+                "enum": ["GU"]
+              },
+              {
+                "title": "Hawaii",
+                "enum": ["HI"]
+              },
+              {
+                "title": "Idaho",
+                "enum": ["ID"]
+              },
+              {
+                "title": "Illinois",
+                "enum": ["IL"]
+              },
+              {
+                "title": "Indiana",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Iowa",
+                "enum": ["IA"]
+              },
+              {
+                "title": "Kansas",
+                "enum": ["KS"]
+              },
+              {
+                "title": "Kentucky",
+                "enum": ["KY"]
+              },
+              {
+                "title": "Louisiana",
+                "enum": ["LA"]
+              },
+              {
+                "title": "Maine",
+                "enum": ["ME"]
+              },
+              {
+                "title": "Manitoba",
+                "enum": ["MB"]
+              },
+              {
+                "title": "Maryland",
+                "enum": ["MD"]
+              },
+              {
+                "title": "Massachusetts",
+                "enum": ["MA"]
+              },
+              {
+                "title": "Michigan",
+                "enum": ["MI"]
+              },
+              {
+                "title": "Minas Gerais",
+                "enum": ["MG"]
+              },
+              {
+                "title": "Minnesota",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Mississippi",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Missouri",
+                "enum": ["MO"]
+              },
+              {
+                "title": "Montana",
+                "enum": ["MT"]
+              },
+              {
+                "title": "Nebraska",
+                "enum": ["NE"]
+              },
+              {
+                "title": "Nevada",
+                "enum": ["NV"]
+              },
+              {
+                "title": "New Hampshire",
+                "enum": ["NH"]
+              },
+              {
+                "title": "New Jersey",
+                "enum": ["NJ"]
+              },
+              {
+                "title": "New Mexico",
+                "enum": ["NM"]
+              },
+              {
+                "title": "New York",
+                "enum": ["NY"]
+              },
+              {
+                "title": "Newfoundland",
+                "enum": ["NF"]
+              },
+              {
+                "title": "North Carolina",
+                "enum": ["NC"]
+              },
+              {
+                "title": "North Dakota",
+                "enum": ["ND"]
+              },
+              {
+                "title": "Northwest Territories",
+                "enum": ["NW"]
+              },
+              {
+                "title": "Ohio",
+                "enum": ["OH"]
+              },
+              {
+                "title": "Oklahoma",
+                "enum": ["OK"]
+              },
+              {
+                "title": "Ontario",
+                "enum": ["ON"]
+              },
+              {
+                "title": "Oregon",
+                "enum": ["OR"]
+              },
+              {
+                "title": "Pennsylvania",
+                "enum": ["PA"]
+              },
+              {
+                "title": "Puerto Rico",
+                "enum": ["PR"]
+              },
+              {
+                "title": "Quebec",
+                "enum": ["PQ"]
+              },
+              {
+                "title": "Rhode Island",
+                "enum": ["RI"]
+              },
+              {
+                "title": "Saskatchewan",
+                "enum": ["SA"]
+              },
+              {
+                "title": "South Carolina",
+                "enum": ["SC"]
+              },
+              {
+                "title": "South Dakota",
+                "enum": ["SD"]
+              },
+              {
+                "title": "Tennessee",
+                "enum": ["TN"]
+              },
+              {
+                "title": "Texas",
+                "enum": ["TX"]
+              },
+              {
+                "title": "United States",
+                "enum": ["US"]
+              },
+              {
+                "title": "Utah",
+                "enum": ["UT"]
+              },
+              {
+                "title": "Vermont",
+                "enum": ["VT"]
+              },
+              {
+                "title": "Virgin Islands",
+                "enum": ["VI"]
+              },
+              {
+                "title": "Virginia",
+                "enum": ["VA"]
+              },
+              {
+                "title": "Washington",
+                "enum": ["WA"]
+              },
+              {
+                "title": "West Virginia",
+                "enum": ["WV"]
+              },
+              {
+                "title": "Wisconsin",
+                "enum": ["WI"]
+              },
+              {
+                "title": "Wyoming",
+                "enum": ["WY"]
+              },
+              {
+                "title": "Yukon",
+                "enum": ["YN"]
+              }
+            ],
+            "type": "string"
+          },
+          "felaBodilyInjuryLimit": {
+            "oneOf": [
+              {
+                "title": "0",
+                "enum": ["0"]
+              },
+              {
+                "title": "100",
+                "enum": ["100"]
+              },
+              {
+                "title": "150",
+                "enum": ["150"]
+              },
+              {
+                "title": "200",
+                "enum": ["200"]
+              },
+              {
+                "title": "250",
+                "enum": ["250"]
+              },
+              {
+                "title": "300",
+                "enum": ["300"]
+              },
+              {
+                "title": "400",
+                "enum": ["400"]
+              },
+              {
+                "title": "500",
+                "enum": ["500"]
+              },
+              {
+                "title": "600",
+                "enum": ["600"]
+              },
+              {
+                "title": "700",
+                "enum": ["700"]
+              },
+              {
+                "title": "800",
+                "enum": ["800"]
+              },
+              {
+                "title": "900",
+                "enum": ["900"]
+              },
+              {
+                "title": "1000",
+                "enum": ["1000"]
+              },
+              {
+                "title": "1500",
+                "enum": ["1500"]
+              },
+              {
+                "title": "2000",
+                "enum": ["2000"]
+              },
+              {
+                "title": "2500",
+                "enum": ["2500"]
+              },
+              {
+                "title": "3000",
+                "enum": ["3000"]
+              },
+              {
+                "title": "3500",
+                "enum": ["3500"]
+              },
+              {
+                "title": "4000",
+                "enum": ["4000"]
+              },
+              {
+                "title": "4500",
+                "enum": ["4500"]
+              },
+              {
+                "title": "5000",
+                "enum": ["5000"]
+              },
+              {
+                "title": "6000",
+                "enum": ["6000"]
+              },
+              {
+                "title": "7000",
+                "enum": ["7000"]
+              },
+              {
+                "title": "8000",
+                "enum": ["8000"]
+              },
+              {
+                "title": "9000",
+                "enum": ["9000"]
+              },
+              {
+                "title": "10000",
+                "enum": ["10000"]
+              },
+              {
+                "title": "15000",
+                "enum": ["15000"]
+              },
+              {
+                "title": "20000",
+                "enum": ["20000"]
+              },
+              {
+                "title": "25000",
+                "enum": ["25000"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCurrency": {
+            "type": "string"
+          },
+          "employersDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "module": {
+            "type": "string"
+          },
+          "NCCIInterstateID": {
+            "type": "string"
+          },
+          "expenseConstant": {
+            "type": "string"
+          },
+          "voluntryComprehensiveLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              }
+            ],
+            "type": "string"
+          },
+          "quoteNumber": {
+            "type": "string"
+          },
+          "isInsuredAddressUpdated": {
+            "type": "boolean"
+          },
+          "fullMasterCompany": {
+            "oneOf": [
+              {
+                "title": "QA - 00(00,05,00)",
+                "enum": ["000500"]
+              }
+            ],
+            "type": "string"
+          },
+          "recalcUsingCurrentRates": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "size": {
+            "type": "integer"
+          },
+          "enQuoteSymbol": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "nonStandardIndicator": {
+            "oneOf": [
+              {
+                "title": "Non Standard does not apply",
+                "enum": ["01"]
+              },
+              {
+                "title": "Excluding Medical",
+                "enum": ["02"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["03"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["04"]
+              },
+              {
+                "title": "Excess",
+                "enum": ["05"]
+              },
+              {
+                "title": "Excess Medical",
+                "enum": ["06"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["07"]
+              },
+              {
+                "title": "State Act Excluding Officers, Partners, Sole Prop",
+                "enum": ["08"]
+              },
+              {
+                "title": "Voluntary Coverage Not Mandatory",
+                "enum": ["09"]
+              },
+              {
+                "title": "Self Insured Group",
+                "enum": ["99"]
+              }
+            ],
+            "type": "string"
+          },
+          "premiumDepositOverride": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "lossConstant": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "extension": {
+            "type": "string"
+          },
+          "rewriteOfPolicyNumber": {
+            "type": "string"
+          },
+          "enQuoteNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reissueOfPolicyNumber": {
+            "type": "string"
+          },
+          "previousEffectiveDate": {
+            "type": "string"
+          },
+          "profitCentre": {
+            "type": "string"
+          },
+          "employersLiabilityMinimum": {
+            "type": "string"
+          },
+          "experienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCompany": {
+            "type": "string"
+          },
+          "premium": {
+            "type": "string"
+          },
+          "premiumDepositPercentage": {
+            "type": "string"
+          },
+          "insuredEmailId": {
+            "type": "string"
+          },
+          "primarySiteAndMailingAddressDifferent": {
+            "type": "boolean"
+          },
+          "totalPremium": {
+            "type": "string"
+          },
+          "auditFrequency": {
+            "oneOf": [
+              {
+                "title": "Quarterly",
+                "enum": ["Q"]
+              },
+              {
+                "title": "Semi-annual",
+                "enum": ["S"]
+              },
+              {
+                "title": "Waive",
+                "enum": ["W"]
+              },
+              {
+                "title": "Annual",
+                "enum": ["A"]
+              },
+              {
+                "title": "Monthly",
+                "enum": ["M"]
+              },
+              {
+                "title": "Not Applicable",
+                "enum": ["N"]
+              }
+            ],
+            "type": "string"
+          },
+          "assignmentDate": {
+            "type": "string"
+          },
+          "insuredNameIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "reasonAmend": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "quoteEffectiveDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "policyNumber": {
+            "type": "string",
+            "maxLength": 12
+          },
+          "typeOfCoverage": {
+            "oneOf": [
+              {
+                "title": "Standard Workers' Compensation Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Alternative Workers' Compensation Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Group Policy",
+                "enum": ["03"]
+              },
+              {
+                "title": "Other Loss Sensitive Programs",
+                "enum": ["04"]
+              },
+              {
+                "title": "Large Risk Rating Option",
+                "enum": ["05"]
+              },
+              {
+                "title": "Non Standard Workers' Compensation Policy",
+                "enum": ["09"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyPeriod": {
+            "oneOf": [
+              {
+                "title": "3 months",
+                "enum": ["3"]
+              },
+              {
+                "title": "6 months",
+                "enum": ["6"]
+              },
+              {
+                "title": "12 months",
+                "enum": ["12"]
+              },
+              {
+                "title": "Custom",
+                "enum": ["0"]
+              }
+            ],
+            "type": "string"
+          },
+          "legalEntity": {
+            "oneOf": [
+              {
+                "title": "Associate/Labor UN/Relig",
+                "enum": ["AS"]
+              },
+              {
+                "title": "Church/Synagogue",
+                "enum": ["CH"]
+              },
+              {
+                "title": "Co-Employers",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Common Ownership",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Coporate Non-Profit Organization",
+                "enum": ["CN"]
+              },
+              {
+                "title": "Corporation",
+                "enum": ["CP"]
+              },
+              {
+                "title": "County/City",
+                "enum": ["CC"]
+              },
+              {
+                "title": "Estate",
+                "enum": ["ES"]
+              },
+              {
+                "title": "Executor or Trustee",
+                "enum": ["EX"]
+              },
+              {
+                "title": "Fraternity",
+                "enum": ["FR"]
+              },
+              {
+                "title": "Government Agency AGENCY",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Governmental Entity",
+                "enum": ["GE"]
+              },
+              {
+                "title": "Hospital",
+                "enum": ["HO"]
+              },
+              {
+                "title": "Indian Pueblo",
+                "enum": ["IP"]
+              },
+              {
+                "title": "Indian Tribe",
+                "enum": ["IT"]
+              },
+              {
+                "title": "Individual",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Joint Employers",
+                "enum": ["JE"]
+              },
+              {
+                "title": "Joint Venture",
+                "enum": ["JV"]
+              },
+              {
+                "title": "Limited Liability Co",
+                "enum": ["LL"]
+              },
+              {
+                "title": "Limited Liability Partnership",
+                "enum": ["LM"]
+              },
+              {
+                "title": "Limited Partnership",
+                "enum": ["LP"]
+              },
+              {
+                "title": "Multiple Status",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Municipality",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Non-Profit Organization",
+                "enum": ["NP"]
+              },
+              {
+                "title": "Other",
+                "enum": ["OT"]
+              },
+              {
+                "title": "Partnership",
+                "enum": ["PT"]
+              },
+              {
+                "title": "Political Sub-division",
+                "enum": ["PS"]
+              },
+              {
+                "title": "Professional Association",
+                "enum": ["PA"]
+              },
+              {
+                "title": "School",
+                "enum": ["SC"]
+              },
+              {
+                "title": "School Board",
+                "enum": ["SB"]
+              },
+              {
+                "title": "Subchapter S Corp",
+                "enum": ["SS"]
+              },
+              {
+                "title": "Township",
+                "enum": ["TW"]
+              },
+              {
+                "title": "Trust",
+                "enum": ["TR"]
+              },
+              {
+                "title": "Trust or Estate",
+                "enum": ["TE"]
+              },
+              {
+                "title": "Unicorporated Association",
+                "enum": ["UA"]
+              }
+            ],
+            "type": "string"
+          },
+          "issueReason": {
+            "oneOf": [
+              {
+                "title": "Not Selected",
+                "enum": ["N"]
+              },
+              {
+                "title": "Replace a Binder",
+                "enum": ["R"]
+              },
+              {
+                "title": "Synchronize Policy Term",
+                "enum": ["S"]
+              },
+              {
+                "title": "Other - Don't Prorate",
+                "enum": ["O"]
+              }
+            ],
+            "type": ""
+          },
+          "reasonAmended": {
+            "type": "string"
+          },
+          "minimumPremium": {
+            "type": "string"
+          },
+          "nonRenewalIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "voluntaryBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "directAssumed": {
+            "oneOf": [
+              {
+                "title": "Direct",
+                "enum": ["D"]
+              },
+              {
+                "title": "Assumed",
+                "enum": ["A"]
+              }
+            ],
+            "type": ""
+          },
+          "planIndicator": {
+            "oneOf": [
+              {
+                "title": "Voluntary Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Normal Assigned Risk Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Small Premium Policy Plan",
+                "enum": ["03"]
+              },
+              {
+                "title": "Assigned Risk Policy Voluntary Direct",
+                "enum": ["05"]
+              },
+              {
+                "title": "Assigned Risk Policy Mandatory Direct",
+                "enum": ["06"]
+              }
+            ],
+            "type": "string"
+          },
+          "ardExperienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "links": {
+            "type": "list"
+          },
+          "reinstateFeeInd": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "groupSelection": {
+            "oneOf": [
+              {
+                "title": "Not Applicable",
+                "enum": ["NA"]
+              },
+              {
+                "title": "Independent Schools - Test",
+                "enum": ["DZ"]
+              },
+              {
+                "title": "Independent Schools",
+                "enum": ["IS"]
+              },
+              {
+                "title": "Test - No Questions",
+                "enum": ["MI"]
+              }
+            ],
+            "type": "string"
+          },
+          "ARDassignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "previousPolicyNumber": {
+            "type": "string"
+          },
+          "flexRating": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "federalEmployerIdNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "previousCarrier": {
+            "type": "string"
+          },
+          "enQuoteModule": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "employersBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "typeActivity": {
+            "type": "string"
+          },
+          "producer": {
+            "type": "string"
+          },
+          "addCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "page": {
+            "type": "integer"
+          },
+          "endorseText": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "quoteState": {
+            "type": "string"
+          },
+          "companyLine": {
+            "type": "string"
+          },
+          "insuredPhoneNumber": {
+            "type": "string"
+          },
+          "locationCompany": {
+            "type": "string"
+          },
+          "policyInceptionDate": {
+            "type": "string"
+          },
+          "ARDExperienceModificationRate": {
+            "type": "string"
+          },
+          "anniversaryRateDate": {
+            "type": "string"
+          },
+          "lineofBusiness": {
+            "type": "string"
+          },
+          "clientSeqNumber": {
+            "type": "string",
+            "maxLength": 9
+          },
+          "deleteCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "totalPageCount": {
+            "type": "integer"
+          },
+          "voluntaryDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "addressSeqNumber": {
+            "type": "string",
+            "maxLength": 5
+          },
+          "employersBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "assignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "enteredDate": {
+            "type": "string"
+          },
+          "experienceModificationRate": {
+            "type": "string"
+          },
+          "reasonAmendDigit1": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "customerNumber": {
+            "type": "string"
+          },
+          "contractCurrentStatus": {
+            "type": "string"
+          },
+          "reasonAmendDigit3": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reasonAmendDigit2": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "agencyNumber": {
+            "type": "string",
+            "maxLength": 7
+          },
+          "masterCompany": {
+            "type": "string"
+          },
+          "isContractInError": {
+            "type": "boolean"
+          },
+          "issueDescription": {
+            "type": "string"
+          },
+          "payPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "state",
+          "quoteExpirationDate",
+          "fullMasterCompany",
+          "policyPeriod",
+          "quoteEffectiveDate",
+          "addressSeqNumber",
+          "clientSeqNumber",
+          "agencyNumber"
+        ]
+      }
+    },
+    {
+      "title": "Update a Quote",
+      "method": "PATCH",
+      "href": "https://alb-external.sandbox-1012.hub-51.sandbox.assure.dxc.com/pointin-wc-quotes/policies/V0NWMDAxOTI0NjAwMDAwNTAwU0M=",
+      "rel": "update",
+      "schema": {
+        "properties": {
+          "goPaperless": {
+            "type": "boolean"
+          },
+          "quoteExpirationDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "premiumDiscount": {
+            "type": "string"
+          },
+          "renewalPayPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          },
+          "voluntaryBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "isNCCISwitchOn": {
+            "type": "boolean"
+          },
+          "employersLiabilityPremium": {
+            "type": "string"
+          },
+          "voluntaryCompensation": {
+            "type": "string"
+          },
+          "depositPremiumAmount": {
+            "type": "string"
+          },
+          "totalCommission": {
+            "type": "string"
+          },
+          "branch": {
+            "type": "string"
+          },
+          "userID": {
+            "type": "string"
+          },
+          "renewalOption": {
+            "oneOf": [
+              {
+                "title": "Alright For Agent To Renew",
+                "enum": ["0"]
+              },
+              {
+                "title": "Computer Renew",
+                "enum": ["1"]
+              },
+              {
+                "title": "Alright For Home Office To Renew",
+                "enum": ["2"]
+              },
+              {
+                "title": "Already Renewed",
+                "enum": ["3"]
+              },
+              {
+                "title": "Agent Issued First Policy, Computer To Renew",
+                "enum": ["4"]
+              },
+              {
+                "title": "Non-Renewal With A Notice",
+                "enum": ["7"]
+              },
+              {
+                "title": "Non-Renewal Without A Notice",
+                "enum": ["8"]
+              }
+            ],
+            "type": ""
+          },
+          "commissionOverridePercentage": {
+            "type": "string"
+          },
+          "employersLiabilityLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/1000",
+                "enum": ["100/100/1000"]
+              },
+              {
+                "title": "100/100/10000",
+                "enum": ["100/100/10000"]
+              },
+              {
+                "title": "100/100/2000",
+                "enum": ["100/100/2000"]
+              },
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "100/100/5000",
+                "enum": ["100/100/5000"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "1000/1000/2000",
+                "enum": ["1000/1000/2000"]
+              },
+              {
+                "title": "1000/1000/5000",
+                "enum": ["1000/1000/5000"]
+              },
+              {
+                "title": "2000/2000/2000",
+                "enum": ["2000/2000/2000"]
+              },
+              {
+                "title": "500/500/1000",
+                "enum": ["500/500/1000"]
+              },
+              {
+                "title": "500/500/10000",
+                "enum": ["500/500/10000"]
+              },
+              {
+                "title": "500/500/2000",
+                "enum": ["500/500/2000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              },
+              {
+                "title": "500/500/5000",
+                "enum": ["500/500/5000"]
+              },
+              {
+                "title": "5000/5000/5000",
+                "enum": ["5000/5000/5000"]
+              }
+            ],
+            "type": "string"
+          },
+          "state": {
+            "oneOf": [
+              {
+                "title": "Alabama",
+                "enum": ["AL"]
+              },
+              {
+                "title": "Alaska",
+                "enum": ["AK"]
+              },
+              {
+                "title": "Arizona",
+                "enum": ["AZ"]
+              },
+              {
+                "title": "Arkansas",
+                "enum": ["AR"]
+              },
+              {
+                "title": "California",
+                "enum": ["CA"]
+              },
+              {
+                "title": "Colorado",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Connecticut",
+                "enum": ["CT"]
+              },
+              {
+                "title": "Delaware",
+                "enum": ["DE"]
+              },
+              {
+                "title": "District of Columbia",
+                "enum": ["DC"]
+              },
+              {
+                "title": "Florida",
+                "enum": ["FL"]
+              },
+              {
+                "title": "Georgia",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Guam",
+                "enum": ["GU"]
+              },
+              {
+                "title": "Hawaii",
+                "enum": ["HI"]
+              },
+              {
+                "title": "Idaho",
+                "enum": ["ID"]
+              },
+              {
+                "title": "Illinois",
+                "enum": ["IL"]
+              },
+              {
+                "title": "Indiana",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Iowa",
+                "enum": ["IA"]
+              },
+              {
+                "title": "Kansas",
+                "enum": ["KS"]
+              },
+              {
+                "title": "Kentucky",
+                "enum": ["KY"]
+              },
+              {
+                "title": "Louisiana",
+                "enum": ["LA"]
+              },
+              {
+                "title": "Maine",
+                "enum": ["ME"]
+              },
+              {
+                "title": "Manitoba",
+                "enum": ["MB"]
+              },
+              {
+                "title": "Maryland",
+                "enum": ["MD"]
+              },
+              {
+                "title": "Massachusetts",
+                "enum": ["MA"]
+              },
+              {
+                "title": "Michigan",
+                "enum": ["MI"]
+              },
+              {
+                "title": "Minas Gerais",
+                "enum": ["MG"]
+              },
+              {
+                "title": "Minnesota",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Mississippi",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Missouri",
+                "enum": ["MO"]
+              },
+              {
+                "title": "Montana",
+                "enum": ["MT"]
+              },
+              {
+                "title": "Nebraska",
+                "enum": ["NE"]
+              },
+              {
+                "title": "Nevada",
+                "enum": ["NV"]
+              },
+              {
+                "title": "New Hampshire",
+                "enum": ["NH"]
+              },
+              {
+                "title": "New Jersey",
+                "enum": ["NJ"]
+              },
+              {
+                "title": "New Mexico",
+                "enum": ["NM"]
+              },
+              {
+                "title": "New York",
+                "enum": ["NY"]
+              },
+              {
+                "title": "Newfoundland",
+                "enum": ["NF"]
+              },
+              {
+                "title": "North Carolina",
+                "enum": ["NC"]
+              },
+              {
+                "title": "North Dakota",
+                "enum": ["ND"]
+              },
+              {
+                "title": "Northwest Territories",
+                "enum": ["NW"]
+              },
+              {
+                "title": "Ohio",
+                "enum": ["OH"]
+              },
+              {
+                "title": "Oklahoma",
+                "enum": ["OK"]
+              },
+              {
+                "title": "Ontario",
+                "enum": ["ON"]
+              },
+              {
+                "title": "Oregon",
+                "enum": ["OR"]
+              },
+              {
+                "title": "Pennsylvania",
+                "enum": ["PA"]
+              },
+              {
+                "title": "Puerto Rico",
+                "enum": ["PR"]
+              },
+              {
+                "title": "Quebec",
+                "enum": ["PQ"]
+              },
+              {
+                "title": "Rhode Island",
+                "enum": ["RI"]
+              },
+              {
+                "title": "Saskatchewan",
+                "enum": ["SA"]
+              },
+              {
+                "title": "South Carolina",
+                "enum": ["SC"]
+              },
+              {
+                "title": "South Dakota",
+                "enum": ["SD"]
+              },
+              {
+                "title": "Tennessee",
+                "enum": ["TN"]
+              },
+              {
+                "title": "Texas",
+                "enum": ["TX"]
+              },
+              {
+                "title": "United States",
+                "enum": ["US"]
+              },
+              {
+                "title": "Utah",
+                "enum": ["UT"]
+              },
+              {
+                "title": "Vermont",
+                "enum": ["VT"]
+              },
+              {
+                "title": "Virgin Islands",
+                "enum": ["VI"]
+              },
+              {
+                "title": "Virginia",
+                "enum": ["VA"]
+              },
+              {
+                "title": "Washington",
+                "enum": ["WA"]
+              },
+              {
+                "title": "West Virginia",
+                "enum": ["WV"]
+              },
+              {
+                "title": "Wisconsin",
+                "enum": ["WI"]
+              },
+              {
+                "title": "Wyoming",
+                "enum": ["WY"]
+              },
+              {
+                "title": "Yukon",
+                "enum": ["YN"]
+              }
+            ],
+            "type": "string"
+          },
+          "felaBodilyInjuryLimit": {
+            "oneOf": [
+              {
+                "title": "0",
+                "enum": ["0"]
+              },
+              {
+                "title": "100",
+                "enum": ["100"]
+              },
+              {
+                "title": "150",
+                "enum": ["150"]
+              },
+              {
+                "title": "200",
+                "enum": ["200"]
+              },
+              {
+                "title": "250",
+                "enum": ["250"]
+              },
+              {
+                "title": "300",
+                "enum": ["300"]
+              },
+              {
+                "title": "400",
+                "enum": ["400"]
+              },
+              {
+                "title": "500",
+                "enum": ["500"]
+              },
+              {
+                "title": "600",
+                "enum": ["600"]
+              },
+              {
+                "title": "700",
+                "enum": ["700"]
+              },
+              {
+                "title": "800",
+                "enum": ["800"]
+              },
+              {
+                "title": "900",
+                "enum": ["900"]
+              },
+              {
+                "title": "1000",
+                "enum": ["1000"]
+              },
+              {
+                "title": "1500",
+                "enum": ["1500"]
+              },
+              {
+                "title": "2000",
+                "enum": ["2000"]
+              },
+              {
+                "title": "2500",
+                "enum": ["2500"]
+              },
+              {
+                "title": "3000",
+                "enum": ["3000"]
+              },
+              {
+                "title": "3500",
+                "enum": ["3500"]
+              },
+              {
+                "title": "4000",
+                "enum": ["4000"]
+              },
+              {
+                "title": "4500",
+                "enum": ["4500"]
+              },
+              {
+                "title": "5000",
+                "enum": ["5000"]
+              },
+              {
+                "title": "6000",
+                "enum": ["6000"]
+              },
+              {
+                "title": "7000",
+                "enum": ["7000"]
+              },
+              {
+                "title": "8000",
+                "enum": ["8000"]
+              },
+              {
+                "title": "9000",
+                "enum": ["9000"]
+              },
+              {
+                "title": "10000",
+                "enum": ["10000"]
+              },
+              {
+                "title": "15000",
+                "enum": ["15000"]
+              },
+              {
+                "title": "20000",
+                "enum": ["20000"]
+              },
+              {
+                "title": "25000",
+                "enum": ["25000"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCurrency": {
+            "type": "string"
+          },
+          "employersDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "module": {
+            "type": "string"
+          },
+          "NCCIInterstateID": {
+            "type": "string"
+          },
+          "expenseConstant": {
+            "type": "string"
+          },
+          "voluntryComprehensiveLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              }
+            ],
+            "type": "string"
+          },
+          "quoteNumber": {
+            "type": "string"
+          },
+          "isInsuredAddressUpdated": {
+            "type": "boolean"
+          },
+          "fullMasterCompany": {
+            "oneOf": [
+              {
+                "title": "QA - 00(00,05,00)",
+                "enum": ["000500"]
+              }
+            ],
+            "type": "string"
+          },
+          "recalcUsingCurrentRates": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "size": {
+            "type": "integer"
+          },
+          "enQuoteSymbol": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "nonStandardIndicator": {
+            "oneOf": [
+              {
+                "title": "Non Standard does not apply",
+                "enum": ["01"]
+              },
+              {
+                "title": "Excluding Medical",
+                "enum": ["02"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["03"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["04"]
+              },
+              {
+                "title": "Excess",
+                "enum": ["05"]
+              },
+              {
+                "title": "Excess Medical",
+                "enum": ["06"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["07"]
+              },
+              {
+                "title": "State Act Excluding Officers, Partners, Sole Prop",
+                "enum": ["08"]
+              },
+              {
+                "title": "Voluntary Coverage Not Mandatory",
+                "enum": ["09"]
+              },
+              {
+                "title": "Self Insured Group",
+                "enum": ["99"]
+              }
+            ],
+            "type": "string"
+          },
+          "premiumDepositOverride": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "lossConstant": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "extension": {
+            "type": "string"
+          },
+          "rewriteOfPolicyNumber": {
+            "type": "string"
+          },
+          "enQuoteNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reissueOfPolicyNumber": {
+            "type": "string"
+          },
+          "previousEffectiveDate": {
+            "type": "string"
+          },
+          "profitCentre": {
+            "type": "string"
+          },
+          "employersLiabilityMinimum": {
+            "type": "string"
+          },
+          "experienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCompany": {
+            "type": "string"
+          },
+          "premium": {
+            "type": "string"
+          },
+          "premiumDepositPercentage": {
+            "type": "string"
+          },
+          "insuredEmailId": {
+            "type": "string"
+          },
+          "primarySiteAndMailingAddressDifferent": {
+            "type": "boolean"
+          },
+          "totalPremium": {
+            "type": "string"
+          },
+          "auditFrequency": {
+            "oneOf": [
+              {
+                "title": "Quarterly",
+                "enum": ["Q"]
+              },
+              {
+                "title": "Semi-annual",
+                "enum": ["S"]
+              },
+              {
+                "title": "Waive",
+                "enum": ["W"]
+              },
+              {
+                "title": "Annual",
+                "enum": ["A"]
+              },
+              {
+                "title": "Monthly",
+                "enum": ["M"]
+              },
+              {
+                "title": "Not Applicable",
+                "enum": ["N"]
+              }
+            ],
+            "type": "string"
+          },
+          "assignmentDate": {
+            "type": "string"
+          },
+          "insuredNameIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "reasonAmend": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "quoteEffectiveDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "policyNumber": {
+            "type": "string",
+            "maxLength": 12
+          },
+          "typeOfCoverage": {
+            "oneOf": [
+              {
+                "title": "Standard Workers' Compensation Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Alternative Workers' Compensation Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Group Policy",
+                "enum": ["03"]
+              },
+              {
+                "title": "Other Loss Sensitive Programs",
+                "enum": ["04"]
+              },
+              {
+                "title": "Large Risk Rating Option",
+                "enum": ["05"]
+              },
+              {
+                "title": "Non Standard Workers' Compensation Policy",
+                "enum": ["09"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyPeriod": {
+            "oneOf": [
+              {
+                "title": "3 months",
+                "enum": ["3"]
+              },
+              {
+                "title": "6 months",
+                "enum": ["6"]
+              },
+              {
+                "title": "12 months",
+                "enum": ["12"]
+              },
+              {
+                "title": "Custom",
+                "enum": ["0"]
+              }
+            ],
+            "type": "string"
+          },
+          "legalEntity": {
+            "oneOf": [
+              {
+                "title": "Associate/Labor UN/Relig",
+                "enum": ["AS"]
+              },
+              {
+                "title": "Church/Synagogue",
+                "enum": ["CH"]
+              },
+              {
+                "title": "Co-Employers",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Common Ownership",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Coporate Non-Profit Organization",
+                "enum": ["CN"]
+              },
+              {
+                "title": "Corporation",
+                "enum": ["CP"]
+              },
+              {
+                "title": "County/City",
+                "enum": ["CC"]
+              },
+              {
+                "title": "Estate",
+                "enum": ["ES"]
+              },
+              {
+                "title": "Executor or Trustee",
+                "enum": ["EX"]
+              },
+              {
+                "title": "Fraternity",
+                "enum": ["FR"]
+              },
+              {
+                "title": "Government Agency AGENCY",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Governmental Entity",
+                "enum": ["GE"]
+              },
+              {
+                "title": "Hospital",
+                "enum": ["HO"]
+              },
+              {
+                "title": "Indian Pueblo",
+                "enum": ["IP"]
+              },
+              {
+                "title": "Indian Tribe",
+                "enum": ["IT"]
+              },
+              {
+                "title": "Individual",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Joint Employers",
+                "enum": ["JE"]
+              },
+              {
+                "title": "Joint Venture",
+                "enum": ["JV"]
+              },
+              {
+                "title": "Limited Liability Co",
+                "enum": ["LL"]
+              },
+              {
+                "title": "Limited Liability Partnership",
+                "enum": ["LM"]
+              },
+              {
+                "title": "Limited Partnership",
+                "enum": ["LP"]
+              },
+              {
+                "title": "Multiple Status",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Municipality",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Non-Profit Organization",
+                "enum": ["NP"]
+              },
+              {
+                "title": "Other",
+                "enum": ["OT"]
+              },
+              {
+                "title": "Partnership",
+                "enum": ["PT"]
+              },
+              {
+                "title": "Political Sub-division",
+                "enum": ["PS"]
+              },
+              {
+                "title": "Professional Association",
+                "enum": ["PA"]
+              },
+              {
+                "title": "School",
+                "enum": ["SC"]
+              },
+              {
+                "title": "School Board",
+                "enum": ["SB"]
+              },
+              {
+                "title": "Subchapter S Corp",
+                "enum": ["SS"]
+              },
+              {
+                "title": "Township",
+                "enum": ["TW"]
+              },
+              {
+                "title": "Trust",
+                "enum": ["TR"]
+              },
+              {
+                "title": "Trust or Estate",
+                "enum": ["TE"]
+              },
+              {
+                "title": "Unicorporated Association",
+                "enum": ["UA"]
+              }
+            ],
+            "type": "string"
+          },
+          "issueReason": {
+            "oneOf": [
+              {
+                "title": "Not Selected",
+                "enum": ["N"]
+              },
+              {
+                "title": "Replace a Binder",
+                "enum": ["R"]
+              },
+              {
+                "title": "Synchronize Policy Term",
+                "enum": ["S"]
+              },
+              {
+                "title": "Other - Don't Prorate",
+                "enum": ["O"]
+              }
+            ],
+            "type": ""
+          },
+          "reasonAmended": {
+            "type": "string"
+          },
+          "minimumPremium": {
+            "type": "string"
+          },
+          "nonRenewalIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "voluntaryBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "directAssumed": {
+            "oneOf": [
+              {
+                "title": "Direct",
+                "enum": ["D"]
+              },
+              {
+                "title": "Assumed",
+                "enum": ["A"]
+              }
+            ],
+            "type": ""
+          },
+          "planIndicator": {
+            "oneOf": [
+              {
+                "title": "Voluntary Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Normal Assigned Risk Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Small Premium Policy Plan",
+                "enum": ["03"]
+              },
+              {
+                "title": "Assigned Risk Policy Voluntary Direct",
+                "enum": ["05"]
+              },
+              {
+                "title": "Assigned Risk Policy Mandatory Direct",
+                "enum": ["06"]
+              }
+            ],
+            "type": "string"
+          },
+          "ardExperienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "links": {
+            "type": "list"
+          },
+          "reinstateFeeInd": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "groupSelection": {
+            "oneOf": [
+              {
+                "title": "Not Applicable",
+                "enum": ["NA"]
+              },
+              {
+                "title": "Independent Schools - Test",
+                "enum": ["DZ"]
+              },
+              {
+                "title": "Independent Schools",
+                "enum": ["IS"]
+              },
+              {
+                "title": "Test - No Questions",
+                "enum": ["MI"]
+              }
+            ],
+            "type": "string"
+          },
+          "ARDassignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "previousPolicyNumber": {
+            "type": "string"
+          },
+          "flexRating": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "federalEmployerIdNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "previousCarrier": {
+            "type": "string"
+          },
+          "enQuoteModule": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "employersBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "typeActivity": {
+            "type": "string"
+          },
+          "producer": {
+            "type": "string"
+          },
+          "addCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "page": {
+            "type": "integer"
+          },
+          "endorseText": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "quoteState": {
+            "type": "string"
+          },
+          "companyLine": {
+            "type": "string"
+          },
+          "insuredPhoneNumber": {
+            "type": "string"
+          },
+          "locationCompany": {
+            "type": "string"
+          },
+          "policyInceptionDate": {
+            "type": "string"
+          },
+          "ARDExperienceModificationRate": {
+            "type": "string"
+          },
+          "anniversaryRateDate": {
+            "type": "string"
+          },
+          "lineofBusiness": {
+            "type": "string"
+          },
+          "clientSeqNumber": {
+            "type": "string",
+            "maxLength": 9
+          },
+          "deleteCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "totalPageCount": {
+            "type": "integer"
+          },
+          "voluntaryDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "addressSeqNumber": {
+            "type": "string",
+            "maxLength": 5
+          },
+          "employersBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "assignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "enteredDate": {
+            "type": "string"
+          },
+          "experienceModificationRate": {
+            "type": "string"
+          },
+          "reasonAmendDigit1": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "customerNumber": {
+            "type": "string"
+          },
+          "contractCurrentStatus": {
+            "type": "string"
+          },
+          "reasonAmendDigit3": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reasonAmendDigit2": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "agencyNumber": {
+            "type": "string",
+            "maxLength": 7
+          },
+          "masterCompany": {
+            "type": "string"
+          },
+          "isContractInError": {
+            "type": "boolean"
+          },
+          "issueDescription": {
+            "type": "string"
+          },
+          "payPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "state",
+          "quoteExpirationDate",
+          "fullMasterCompany",
+          "policyPeriod",
+          "quoteEffectiveDate",
+          "addressSeqNumber",
+          "clientSeqNumber",
+          "agencyNumber"
+        ]
+      }
+    },
+    {
+      "title": "Delete a Quote",
+      "method": "DELETE",
+      "href": "https://alb-external.sandbox-1012.hub-51.sandbox.assure.dxc.com/pointin-wc-quotes/policies/V0NWMDAxOTI0NjAwMDAwNTAwU0M=",
+      "rel": "delete",
+      "schema": {
+        "properties": {
+          "goPaperless": {
+            "type": "boolean"
+          },
+          "quoteExpirationDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "premiumDiscount": {
+            "type": "string"
+          },
+          "renewalPayPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          },
+          "voluntaryBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "isNCCISwitchOn": {
+            "type": "boolean"
+          },
+          "employersLiabilityPremium": {
+            "type": "string"
+          },
+          "voluntaryCompensation": {
+            "type": "string"
+          },
+          "depositPremiumAmount": {
+            "type": "string"
+          },
+          "totalCommission": {
+            "type": "string"
+          },
+          "branch": {
+            "type": "string"
+          },
+          "userID": {
+            "type": "string"
+          },
+          "renewalOption": {
+            "oneOf": [
+              {
+                "title": "Alright For Agent To Renew",
+                "enum": ["0"]
+              },
+              {
+                "title": "Computer Renew",
+                "enum": ["1"]
+              },
+              {
+                "title": "Alright For Home Office To Renew",
+                "enum": ["2"]
+              },
+              {
+                "title": "Already Renewed",
+                "enum": ["3"]
+              },
+              {
+                "title": "Agent Issued First Policy, Computer To Renew",
+                "enum": ["4"]
+              },
+              {
+                "title": "Non-Renewal With A Notice",
+                "enum": ["7"]
+              },
+              {
+                "title": "Non-Renewal Without A Notice",
+                "enum": ["8"]
+              }
+            ],
+            "type": ""
+          },
+          "commissionOverridePercentage": {
+            "type": "string"
+          },
+          "employersLiabilityLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/1000",
+                "enum": ["100/100/1000"]
+              },
+              {
+                "title": "100/100/10000",
+                "enum": ["100/100/10000"]
+              },
+              {
+                "title": "100/100/2000",
+                "enum": ["100/100/2000"]
+              },
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "100/100/5000",
+                "enum": ["100/100/5000"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "1000/1000/2000",
+                "enum": ["1000/1000/2000"]
+              },
+              {
+                "title": "1000/1000/5000",
+                "enum": ["1000/1000/5000"]
+              },
+              {
+                "title": "2000/2000/2000",
+                "enum": ["2000/2000/2000"]
+              },
+              {
+                "title": "500/500/1000",
+                "enum": ["500/500/1000"]
+              },
+              {
+                "title": "500/500/10000",
+                "enum": ["500/500/10000"]
+              },
+              {
+                "title": "500/500/2000",
+                "enum": ["500/500/2000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              },
+              {
+                "title": "500/500/5000",
+                "enum": ["500/500/5000"]
+              },
+              {
+                "title": "5000/5000/5000",
+                "enum": ["5000/5000/5000"]
+              }
+            ],
+            "type": "string"
+          },
+          "state": {
+            "oneOf": [
+              {
+                "title": "Alabama",
+                "enum": ["AL"]
+              },
+              {
+                "title": "Alaska",
+                "enum": ["AK"]
+              },
+              {
+                "title": "Arizona",
+                "enum": ["AZ"]
+              },
+              {
+                "title": "Arkansas",
+                "enum": ["AR"]
+              },
+              {
+                "title": "California",
+                "enum": ["CA"]
+              },
+              {
+                "title": "Colorado",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Connecticut",
+                "enum": ["CT"]
+              },
+              {
+                "title": "Delaware",
+                "enum": ["DE"]
+              },
+              {
+                "title": "District of Columbia",
+                "enum": ["DC"]
+              },
+              {
+                "title": "Florida",
+                "enum": ["FL"]
+              },
+              {
+                "title": "Georgia",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Guam",
+                "enum": ["GU"]
+              },
+              {
+                "title": "Hawaii",
+                "enum": ["HI"]
+              },
+              {
+                "title": "Idaho",
+                "enum": ["ID"]
+              },
+              {
+                "title": "Illinois",
+                "enum": ["IL"]
+              },
+              {
+                "title": "Indiana",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Iowa",
+                "enum": ["IA"]
+              },
+              {
+                "title": "Kansas",
+                "enum": ["KS"]
+              },
+              {
+                "title": "Kentucky",
+                "enum": ["KY"]
+              },
+              {
+                "title": "Louisiana",
+                "enum": ["LA"]
+              },
+              {
+                "title": "Maine",
+                "enum": ["ME"]
+              },
+              {
+                "title": "Manitoba",
+                "enum": ["MB"]
+              },
+              {
+                "title": "Maryland",
+                "enum": ["MD"]
+              },
+              {
+                "title": "Massachusetts",
+                "enum": ["MA"]
+              },
+              {
+                "title": "Michigan",
+                "enum": ["MI"]
+              },
+              {
+                "title": "Minas Gerais",
+                "enum": ["MG"]
+              },
+              {
+                "title": "Minnesota",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Mississippi",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Missouri",
+                "enum": ["MO"]
+              },
+              {
+                "title": "Montana",
+                "enum": ["MT"]
+              },
+              {
+                "title": "Nebraska",
+                "enum": ["NE"]
+              },
+              {
+                "title": "Nevada",
+                "enum": ["NV"]
+              },
+              {
+                "title": "New Hampshire",
+                "enum": ["NH"]
+              },
+              {
+                "title": "New Jersey",
+                "enum": ["NJ"]
+              },
+              {
+                "title": "New Mexico",
+                "enum": ["NM"]
+              },
+              {
+                "title": "New York",
+                "enum": ["NY"]
+              },
+              {
+                "title": "Newfoundland",
+                "enum": ["NF"]
+              },
+              {
+                "title": "North Carolina",
+                "enum": ["NC"]
+              },
+              {
+                "title": "North Dakota",
+                "enum": ["ND"]
+              },
+              {
+                "title": "Northwest Territories",
+                "enum": ["NW"]
+              },
+              {
+                "title": "Ohio",
+                "enum": ["OH"]
+              },
+              {
+                "title": "Oklahoma",
+                "enum": ["OK"]
+              },
+              {
+                "title": "Ontario",
+                "enum": ["ON"]
+              },
+              {
+                "title": "Oregon",
+                "enum": ["OR"]
+              },
+              {
+                "title": "Pennsylvania",
+                "enum": ["PA"]
+              },
+              {
+                "title": "Puerto Rico",
+                "enum": ["PR"]
+              },
+              {
+                "title": "Quebec",
+                "enum": ["PQ"]
+              },
+              {
+                "title": "Rhode Island",
+                "enum": ["RI"]
+              },
+              {
+                "title": "Saskatchewan",
+                "enum": ["SA"]
+              },
+              {
+                "title": "South Carolina",
+                "enum": ["SC"]
+              },
+              {
+                "title": "South Dakota",
+                "enum": ["SD"]
+              },
+              {
+                "title": "Tennessee",
+                "enum": ["TN"]
+              },
+              {
+                "title": "Texas",
+                "enum": ["TX"]
+              },
+              {
+                "title": "United States",
+                "enum": ["US"]
+              },
+              {
+                "title": "Utah",
+                "enum": ["UT"]
+              },
+              {
+                "title": "Vermont",
+                "enum": ["VT"]
+              },
+              {
+                "title": "Virgin Islands",
+                "enum": ["VI"]
+              },
+              {
+                "title": "Virginia",
+                "enum": ["VA"]
+              },
+              {
+                "title": "Washington",
+                "enum": ["WA"]
+              },
+              {
+                "title": "West Virginia",
+                "enum": ["WV"]
+              },
+              {
+                "title": "Wisconsin",
+                "enum": ["WI"]
+              },
+              {
+                "title": "Wyoming",
+                "enum": ["WY"]
+              },
+              {
+                "title": "Yukon",
+                "enum": ["YN"]
+              }
+            ],
+            "type": "string"
+          },
+          "felaBodilyInjuryLimit": {
+            "oneOf": [
+              {
+                "title": "0",
+                "enum": ["0"]
+              },
+              {
+                "title": "100",
+                "enum": ["100"]
+              },
+              {
+                "title": "150",
+                "enum": ["150"]
+              },
+              {
+                "title": "200",
+                "enum": ["200"]
+              },
+              {
+                "title": "250",
+                "enum": ["250"]
+              },
+              {
+                "title": "300",
+                "enum": ["300"]
+              },
+              {
+                "title": "400",
+                "enum": ["400"]
+              },
+              {
+                "title": "500",
+                "enum": ["500"]
+              },
+              {
+                "title": "600",
+                "enum": ["600"]
+              },
+              {
+                "title": "700",
+                "enum": ["700"]
+              },
+              {
+                "title": "800",
+                "enum": ["800"]
+              },
+              {
+                "title": "900",
+                "enum": ["900"]
+              },
+              {
+                "title": "1000",
+                "enum": ["1000"]
+              },
+              {
+                "title": "1500",
+                "enum": ["1500"]
+              },
+              {
+                "title": "2000",
+                "enum": ["2000"]
+              },
+              {
+                "title": "2500",
+                "enum": ["2500"]
+              },
+              {
+                "title": "3000",
+                "enum": ["3000"]
+              },
+              {
+                "title": "3500",
+                "enum": ["3500"]
+              },
+              {
+                "title": "4000",
+                "enum": ["4000"]
+              },
+              {
+                "title": "4500",
+                "enum": ["4500"]
+              },
+              {
+                "title": "5000",
+                "enum": ["5000"]
+              },
+              {
+                "title": "6000",
+                "enum": ["6000"]
+              },
+              {
+                "title": "7000",
+                "enum": ["7000"]
+              },
+              {
+                "title": "8000",
+                "enum": ["8000"]
+              },
+              {
+                "title": "9000",
+                "enum": ["9000"]
+              },
+              {
+                "title": "10000",
+                "enum": ["10000"]
+              },
+              {
+                "title": "15000",
+                "enum": ["15000"]
+              },
+              {
+                "title": "20000",
+                "enum": ["20000"]
+              },
+              {
+                "title": "25000",
+                "enum": ["25000"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCurrency": {
+            "type": "string"
+          },
+          "employersDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "module": {
+            "type": "string"
+          },
+          "NCCIInterstateID": {
+            "type": "string"
+          },
+          "expenseConstant": {
+            "type": "string"
+          },
+          "voluntryComprehensiveLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              }
+            ],
+            "type": "string"
+          },
+          "quoteNumber": {
+            "type": "string"
+          },
+          "isInsuredAddressUpdated": {
+            "type": "boolean"
+          },
+          "fullMasterCompany": {
+            "oneOf": [
+              {
+                "title": "QA - 00(00,05,00)",
+                "enum": ["000500"]
+              }
+            ],
+            "type": "string"
+          },
+          "recalcUsingCurrentRates": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "size": {
+            "type": "integer"
+          },
+          "enQuoteSymbol": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "nonStandardIndicator": {
+            "oneOf": [
+              {
+                "title": "Non Standard does not apply",
+                "enum": ["01"]
+              },
+              {
+                "title": "Excluding Medical",
+                "enum": ["02"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["03"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["04"]
+              },
+              {
+                "title": "Excess",
+                "enum": ["05"]
+              },
+              {
+                "title": "Excess Medical",
+                "enum": ["06"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["07"]
+              },
+              {
+                "title": "State Act Excluding Officers, Partners, Sole Prop",
+                "enum": ["08"]
+              },
+              {
+                "title": "Voluntary Coverage Not Mandatory",
+                "enum": ["09"]
+              },
+              {
+                "title": "Self Insured Group",
+                "enum": ["99"]
+              }
+            ],
+            "type": "string"
+          },
+          "premiumDepositOverride": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "lossConstant": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "extension": {
+            "type": "string"
+          },
+          "rewriteOfPolicyNumber": {
+            "type": "string"
+          },
+          "enQuoteNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reissueOfPolicyNumber": {
+            "type": "string"
+          },
+          "previousEffectiveDate": {
+            "type": "string"
+          },
+          "profitCentre": {
+            "type": "string"
+          },
+          "employersLiabilityMinimum": {
+            "type": "string"
+          },
+          "experienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCompany": {
+            "type": "string"
+          },
+          "premium": {
+            "type": "string"
+          },
+          "premiumDepositPercentage": {
+            "type": "string"
+          },
+          "insuredEmailId": {
+            "type": "string"
+          },
+          "primarySiteAndMailingAddressDifferent": {
+            "type": "boolean"
+          },
+          "totalPremium": {
+            "type": "string"
+          },
+          "auditFrequency": {
+            "oneOf": [
+              {
+                "title": "Quarterly",
+                "enum": ["Q"]
+              },
+              {
+                "title": "Semi-annual",
+                "enum": ["S"]
+              },
+              {
+                "title": "Waive",
+                "enum": ["W"]
+              },
+              {
+                "title": "Annual",
+                "enum": ["A"]
+              },
+              {
+                "title": "Monthly",
+                "enum": ["M"]
+              },
+              {
+                "title": "Not Applicable",
+                "enum": ["N"]
+              }
+            ],
+            "type": "string"
+          },
+          "assignmentDate": {
+            "type": "string"
+          },
+          "insuredNameIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "reasonAmend": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "quoteEffectiveDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "policyNumber": {
+            "type": "string",
+            "maxLength": 12
+          },
+          "typeOfCoverage": {
+            "oneOf": [
+              {
+                "title": "Standard Workers' Compensation Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Alternative Workers' Compensation Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Group Policy",
+                "enum": ["03"]
+              },
+              {
+                "title": "Other Loss Sensitive Programs",
+                "enum": ["04"]
+              },
+              {
+                "title": "Large Risk Rating Option",
+                "enum": ["05"]
+              },
+              {
+                "title": "Non Standard Workers' Compensation Policy",
+                "enum": ["09"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyPeriod": {
+            "oneOf": [
+              {
+                "title": "3 months",
+                "enum": ["3"]
+              },
+              {
+                "title": "6 months",
+                "enum": ["6"]
+              },
+              {
+                "title": "12 months",
+                "enum": ["12"]
+              },
+              {
+                "title": "Custom",
+                "enum": ["0"]
+              }
+            ],
+            "type": "string"
+          },
+          "legalEntity": {
+            "oneOf": [
+              {
+                "title": "Associate/Labor UN/Relig",
+                "enum": ["AS"]
+              },
+              {
+                "title": "Church/Synagogue",
+                "enum": ["CH"]
+              },
+              {
+                "title": "Co-Employers",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Common Ownership",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Coporate Non-Profit Organization",
+                "enum": ["CN"]
+              },
+              {
+                "title": "Corporation",
+                "enum": ["CP"]
+              },
+              {
+                "title": "County/City",
+                "enum": ["CC"]
+              },
+              {
+                "title": "Estate",
+                "enum": ["ES"]
+              },
+              {
+                "title": "Executor or Trustee",
+                "enum": ["EX"]
+              },
+              {
+                "title": "Fraternity",
+                "enum": ["FR"]
+              },
+              {
+                "title": "Government Agency AGENCY",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Governmental Entity",
+                "enum": ["GE"]
+              },
+              {
+                "title": "Hospital",
+                "enum": ["HO"]
+              },
+              {
+                "title": "Indian Pueblo",
+                "enum": ["IP"]
+              },
+              {
+                "title": "Indian Tribe",
+                "enum": ["IT"]
+              },
+              {
+                "title": "Individual",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Joint Employers",
+                "enum": ["JE"]
+              },
+              {
+                "title": "Joint Venture",
+                "enum": ["JV"]
+              },
+              {
+                "title": "Limited Liability Co",
+                "enum": ["LL"]
+              },
+              {
+                "title": "Limited Liability Partnership",
+                "enum": ["LM"]
+              },
+              {
+                "title": "Limited Partnership",
+                "enum": ["LP"]
+              },
+              {
+                "title": "Multiple Status",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Municipality",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Non-Profit Organization",
+                "enum": ["NP"]
+              },
+              {
+                "title": "Other",
+                "enum": ["OT"]
+              },
+              {
+                "title": "Partnership",
+                "enum": ["PT"]
+              },
+              {
+                "title": "Political Sub-division",
+                "enum": ["PS"]
+              },
+              {
+                "title": "Professional Association",
+                "enum": ["PA"]
+              },
+              {
+                "title": "School",
+                "enum": ["SC"]
+              },
+              {
+                "title": "School Board",
+                "enum": ["SB"]
+              },
+              {
+                "title": "Subchapter S Corp",
+                "enum": ["SS"]
+              },
+              {
+                "title": "Township",
+                "enum": ["TW"]
+              },
+              {
+                "title": "Trust",
+                "enum": ["TR"]
+              },
+              {
+                "title": "Trust or Estate",
+                "enum": ["TE"]
+              },
+              {
+                "title": "Unicorporated Association",
+                "enum": ["UA"]
+              }
+            ],
+            "type": "string"
+          },
+          "issueReason": {
+            "oneOf": [
+              {
+                "title": "Not Selected",
+                "enum": ["N"]
+              },
+              {
+                "title": "Replace a Binder",
+                "enum": ["R"]
+              },
+              {
+                "title": "Synchronize Policy Term",
+                "enum": ["S"]
+              },
+              {
+                "title": "Other - Don't Prorate",
+                "enum": ["O"]
+              }
+            ],
+            "type": ""
+          },
+          "reasonAmended": {
+            "type": "string"
+          },
+          "minimumPremium": {
+            "type": "string"
+          },
+          "nonRenewalIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "voluntaryBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "directAssumed": {
+            "oneOf": [
+              {
+                "title": "Direct",
+                "enum": ["D"]
+              },
+              {
+                "title": "Assumed",
+                "enum": ["A"]
+              }
+            ],
+            "type": ""
+          },
+          "planIndicator": {
+            "oneOf": [
+              {
+                "title": "Voluntary Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Normal Assigned Risk Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Small Premium Policy Plan",
+                "enum": ["03"]
+              },
+              {
+                "title": "Assigned Risk Policy Voluntary Direct",
+                "enum": ["05"]
+              },
+              {
+                "title": "Assigned Risk Policy Mandatory Direct",
+                "enum": ["06"]
+              }
+            ],
+            "type": "string"
+          },
+          "ardExperienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "links": {
+            "type": "list"
+          },
+          "reinstateFeeInd": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "groupSelection": {
+            "oneOf": [
+              {
+                "title": "Not Applicable",
+                "enum": ["NA"]
+              },
+              {
+                "title": "Independent Schools - Test",
+                "enum": ["DZ"]
+              },
+              {
+                "title": "Independent Schools",
+                "enum": ["IS"]
+              },
+              {
+                "title": "Test - No Questions",
+                "enum": ["MI"]
+              }
+            ],
+            "type": "string"
+          },
+          "ARDassignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "previousPolicyNumber": {
+            "type": "string"
+          },
+          "flexRating": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "federalEmployerIdNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "previousCarrier": {
+            "type": "string"
+          },
+          "enQuoteModule": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "employersBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "typeActivity": {
+            "type": "string"
+          },
+          "producer": {
+            "type": "string"
+          },
+          "addCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "page": {
+            "type": "integer"
+          },
+          "endorseText": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "quoteState": {
+            "type": "string"
+          },
+          "companyLine": {
+            "type": "string"
+          },
+          "insuredPhoneNumber": {
+            "type": "string"
+          },
+          "locationCompany": {
+            "type": "string"
+          },
+          "policyInceptionDate": {
+            "type": "string"
+          },
+          "ARDExperienceModificationRate": {
+            "type": "string"
+          },
+          "anniversaryRateDate": {
+            "type": "string"
+          },
+          "lineofBusiness": {
+            "type": "string"
+          },
+          "clientSeqNumber": {
+            "type": "string",
+            "maxLength": 9
+          },
+          "deleteCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "totalPageCount": {
+            "type": "integer"
+          },
+          "voluntaryDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "addressSeqNumber": {
+            "type": "string",
+            "maxLength": 5
+          },
+          "employersBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "assignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "enteredDate": {
+            "type": "string"
+          },
+          "experienceModificationRate": {
+            "type": "string"
+          },
+          "reasonAmendDigit1": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "customerNumber": {
+            "type": "string"
+          },
+          "contractCurrentStatus": {
+            "type": "string"
+          },
+          "reasonAmendDigit3": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reasonAmendDigit2": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "agencyNumber": {
+            "type": "string",
+            "maxLength": 7
+          },
+          "masterCompany": {
+            "type": "string"
+          },
+          "isContractInError": {
+            "type": "boolean"
+          },
+          "issueDescription": {
+            "type": "string"
+          },
+          "payPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "state",
+          "quoteExpirationDate",
+          "fullMasterCompany",
+          "policyPeriod",
+          "quoteEffectiveDate",
+          "addressSeqNumber",
+          "clientSeqNumber",
+          "agencyNumber"
+        ]
+      }
+    },
+    {
+      "title": "Update a Quote",
+      "method": "PUT",
+      "href": "https://alb-external.sandbox-1012.hub-51.sandbox.assure.dxc.com/pointin-wc-quotes/policies/V0NWMDAxOTI0NjAwMDAwNTAwU0M=",
+      "rel": "put",
+      "schema": {
+        "properties": {
+          "goPaperless": {
+            "type": "boolean"
+          },
+          "quoteExpirationDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "premiumDiscount": {
+            "type": "string"
+          },
+          "renewalPayPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          },
+          "voluntaryBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "isNCCISwitchOn": {
+            "type": "boolean"
+          },
+          "employersLiabilityPremium": {
+            "type": "string"
+          },
+          "voluntaryCompensation": {
+            "type": "string"
+          },
+          "depositPremiumAmount": {
+            "type": "string"
+          },
+          "totalCommission": {
+            "type": "string"
+          },
+          "branch": {
+            "type": "string"
+          },
+          "userID": {
+            "type": "string"
+          },
+          "renewalOption": {
+            "oneOf": [
+              {
+                "title": "Alright For Agent To Renew",
+                "enum": ["0"]
+              },
+              {
+                "title": "Computer Renew",
+                "enum": ["1"]
+              },
+              {
+                "title": "Alright For Home Office To Renew",
+                "enum": ["2"]
+              },
+              {
+                "title": "Already Renewed",
+                "enum": ["3"]
+              },
+              {
+                "title": "Agent Issued First Policy, Computer To Renew",
+                "enum": ["4"]
+              },
+              {
+                "title": "Non-Renewal With A Notice",
+                "enum": ["7"]
+              },
+              {
+                "title": "Non-Renewal Without A Notice",
+                "enum": ["8"]
+              }
+            ],
+            "type": ""
+          },
+          "commissionOverridePercentage": {
+            "type": "string"
+          },
+          "employersLiabilityLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/1000",
+                "enum": ["100/100/1000"]
+              },
+              {
+                "title": "100/100/10000",
+                "enum": ["100/100/10000"]
+              },
+              {
+                "title": "100/100/2000",
+                "enum": ["100/100/2000"]
+              },
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "100/100/5000",
+                "enum": ["100/100/5000"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "1000/1000/2000",
+                "enum": ["1000/1000/2000"]
+              },
+              {
+                "title": "1000/1000/5000",
+                "enum": ["1000/1000/5000"]
+              },
+              {
+                "title": "2000/2000/2000",
+                "enum": ["2000/2000/2000"]
+              },
+              {
+                "title": "500/500/1000",
+                "enum": ["500/500/1000"]
+              },
+              {
+                "title": "500/500/10000",
+                "enum": ["500/500/10000"]
+              },
+              {
+                "title": "500/500/2000",
+                "enum": ["500/500/2000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              },
+              {
+                "title": "500/500/5000",
+                "enum": ["500/500/5000"]
+              },
+              {
+                "title": "5000/5000/5000",
+                "enum": ["5000/5000/5000"]
+              }
+            ],
+            "type": "string"
+          },
+          "state": {
+            "oneOf": [
+              {
+                "title": "Alabama",
+                "enum": ["AL"]
+              },
+              {
+                "title": "Alaska",
+                "enum": ["AK"]
+              },
+              {
+                "title": "Arizona",
+                "enum": ["AZ"]
+              },
+              {
+                "title": "Arkansas",
+                "enum": ["AR"]
+              },
+              {
+                "title": "California",
+                "enum": ["CA"]
+              },
+              {
+                "title": "Colorado",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Connecticut",
+                "enum": ["CT"]
+              },
+              {
+                "title": "Delaware",
+                "enum": ["DE"]
+              },
+              {
+                "title": "District of Columbia",
+                "enum": ["DC"]
+              },
+              {
+                "title": "Florida",
+                "enum": ["FL"]
+              },
+              {
+                "title": "Georgia",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Guam",
+                "enum": ["GU"]
+              },
+              {
+                "title": "Hawaii",
+                "enum": ["HI"]
+              },
+              {
+                "title": "Idaho",
+                "enum": ["ID"]
+              },
+              {
+                "title": "Illinois",
+                "enum": ["IL"]
+              },
+              {
+                "title": "Indiana",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Iowa",
+                "enum": ["IA"]
+              },
+              {
+                "title": "Kansas",
+                "enum": ["KS"]
+              },
+              {
+                "title": "Kentucky",
+                "enum": ["KY"]
+              },
+              {
+                "title": "Louisiana",
+                "enum": ["LA"]
+              },
+              {
+                "title": "Maine",
+                "enum": ["ME"]
+              },
+              {
+                "title": "Manitoba",
+                "enum": ["MB"]
+              },
+              {
+                "title": "Maryland",
+                "enum": ["MD"]
+              },
+              {
+                "title": "Massachusetts",
+                "enum": ["MA"]
+              },
+              {
+                "title": "Michigan",
+                "enum": ["MI"]
+              },
+              {
+                "title": "Minas Gerais",
+                "enum": ["MG"]
+              },
+              {
+                "title": "Minnesota",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Mississippi",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Missouri",
+                "enum": ["MO"]
+              },
+              {
+                "title": "Montana",
+                "enum": ["MT"]
+              },
+              {
+                "title": "Nebraska",
+                "enum": ["NE"]
+              },
+              {
+                "title": "Nevada",
+                "enum": ["NV"]
+              },
+              {
+                "title": "New Hampshire",
+                "enum": ["NH"]
+              },
+              {
+                "title": "New Jersey",
+                "enum": ["NJ"]
+              },
+              {
+                "title": "New Mexico",
+                "enum": ["NM"]
+              },
+              {
+                "title": "New York",
+                "enum": ["NY"]
+              },
+              {
+                "title": "Newfoundland",
+                "enum": ["NF"]
+              },
+              {
+                "title": "North Carolina",
+                "enum": ["NC"]
+              },
+              {
+                "title": "North Dakota",
+                "enum": ["ND"]
+              },
+              {
+                "title": "Northwest Territories",
+                "enum": ["NW"]
+              },
+              {
+                "title": "Ohio",
+                "enum": ["OH"]
+              },
+              {
+                "title": "Oklahoma",
+                "enum": ["OK"]
+              },
+              {
+                "title": "Ontario",
+                "enum": ["ON"]
+              },
+              {
+                "title": "Oregon",
+                "enum": ["OR"]
+              },
+              {
+                "title": "Pennsylvania",
+                "enum": ["PA"]
+              },
+              {
+                "title": "Puerto Rico",
+                "enum": ["PR"]
+              },
+              {
+                "title": "Quebec",
+                "enum": ["PQ"]
+              },
+              {
+                "title": "Rhode Island",
+                "enum": ["RI"]
+              },
+              {
+                "title": "Saskatchewan",
+                "enum": ["SA"]
+              },
+              {
+                "title": "South Carolina",
+                "enum": ["SC"]
+              },
+              {
+                "title": "South Dakota",
+                "enum": ["SD"]
+              },
+              {
+                "title": "Tennessee",
+                "enum": ["TN"]
+              },
+              {
+                "title": "Texas",
+                "enum": ["TX"]
+              },
+              {
+                "title": "United States",
+                "enum": ["US"]
+              },
+              {
+                "title": "Utah",
+                "enum": ["UT"]
+              },
+              {
+                "title": "Vermont",
+                "enum": ["VT"]
+              },
+              {
+                "title": "Virgin Islands",
+                "enum": ["VI"]
+              },
+              {
+                "title": "Virginia",
+                "enum": ["VA"]
+              },
+              {
+                "title": "Washington",
+                "enum": ["WA"]
+              },
+              {
+                "title": "West Virginia",
+                "enum": ["WV"]
+              },
+              {
+                "title": "Wisconsin",
+                "enum": ["WI"]
+              },
+              {
+                "title": "Wyoming",
+                "enum": ["WY"]
+              },
+              {
+                "title": "Yukon",
+                "enum": ["YN"]
+              }
+            ],
+            "type": "string"
+          },
+          "felaBodilyInjuryLimit": {
+            "oneOf": [
+              {
+                "title": "0",
+                "enum": ["0"]
+              },
+              {
+                "title": "100",
+                "enum": ["100"]
+              },
+              {
+                "title": "150",
+                "enum": ["150"]
+              },
+              {
+                "title": "200",
+                "enum": ["200"]
+              },
+              {
+                "title": "250",
+                "enum": ["250"]
+              },
+              {
+                "title": "300",
+                "enum": ["300"]
+              },
+              {
+                "title": "400",
+                "enum": ["400"]
+              },
+              {
+                "title": "500",
+                "enum": ["500"]
+              },
+              {
+                "title": "600",
+                "enum": ["600"]
+              },
+              {
+                "title": "700",
+                "enum": ["700"]
+              },
+              {
+                "title": "800",
+                "enum": ["800"]
+              },
+              {
+                "title": "900",
+                "enum": ["900"]
+              },
+              {
+                "title": "1000",
+                "enum": ["1000"]
+              },
+              {
+                "title": "1500",
+                "enum": ["1500"]
+              },
+              {
+                "title": "2000",
+                "enum": ["2000"]
+              },
+              {
+                "title": "2500",
+                "enum": ["2500"]
+              },
+              {
+                "title": "3000",
+                "enum": ["3000"]
+              },
+              {
+                "title": "3500",
+                "enum": ["3500"]
+              },
+              {
+                "title": "4000",
+                "enum": ["4000"]
+              },
+              {
+                "title": "4500",
+                "enum": ["4500"]
+              },
+              {
+                "title": "5000",
+                "enum": ["5000"]
+              },
+              {
+                "title": "6000",
+                "enum": ["6000"]
+              },
+              {
+                "title": "7000",
+                "enum": ["7000"]
+              },
+              {
+                "title": "8000",
+                "enum": ["8000"]
+              },
+              {
+                "title": "9000",
+                "enum": ["9000"]
+              },
+              {
+                "title": "10000",
+                "enum": ["10000"]
+              },
+              {
+                "title": "15000",
+                "enum": ["15000"]
+              },
+              {
+                "title": "20000",
+                "enum": ["20000"]
+              },
+              {
+                "title": "25000",
+                "enum": ["25000"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCurrency": {
+            "type": "string"
+          },
+          "employersDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "module": {
+            "type": "string"
+          },
+          "NCCIInterstateID": {
+            "type": "string"
+          },
+          "expenseConstant": {
+            "type": "string"
+          },
+          "voluntryComprehensiveLimits": {
+            "oneOf": [
+              {
+                "title": "100/100/500",
+                "enum": ["100/100/500"]
+              },
+              {
+                "title": "1000/1000/1000",
+                "enum": ["1000/1000/1000"]
+              },
+              {
+                "title": "500/500/500",
+                "enum": ["500/500/500"]
+              }
+            ],
+            "type": "string"
+          },
+          "quoteNumber": {
+            "type": "string"
+          },
+          "isInsuredAddressUpdated": {
+            "type": "boolean"
+          },
+          "fullMasterCompany": {
+            "oneOf": [
+              {
+                "title": "QA - 00(00,05,00)",
+                "enum": ["000500"]
+              }
+            ],
+            "type": "string"
+          },
+          "recalcUsingCurrentRates": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "size": {
+            "type": "integer"
+          },
+          "enQuoteSymbol": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "nonStandardIndicator": {
+            "oneOf": [
+              {
+                "title": "Non Standard does not apply",
+                "enum": ["01"]
+              },
+              {
+                "title": "Excluding Medical",
+                "enum": ["02"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["03"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["04"]
+              },
+              {
+                "title": "Excess",
+                "enum": ["05"]
+              },
+              {
+                "title": "Excess Medical",
+                "enum": ["06"]
+              },
+              {
+                "title": "Reserved for future use",
+                "enum": ["07"]
+              },
+              {
+                "title": "State Act Excluding Officers, Partners, Sole Prop",
+                "enum": ["08"]
+              },
+              {
+                "title": "Voluntary Coverage Not Mandatory",
+                "enum": ["09"]
+              },
+              {
+                "title": "Self Insured Group",
+                "enum": ["99"]
+              }
+            ],
+            "type": "string"
+          },
+          "premiumDepositOverride": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "lossConstant": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "extension": {
+            "type": "string"
+          },
+          "rewriteOfPolicyNumber": {
+            "type": "string"
+          },
+          "enQuoteNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reissueOfPolicyNumber": {
+            "type": "string"
+          },
+          "previousEffectiveDate": {
+            "type": "string"
+          },
+          "profitCentre": {
+            "type": "string"
+          },
+          "employersLiabilityMinimum": {
+            "type": "string"
+          },
+          "experienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyCompany": {
+            "type": "string"
+          },
+          "premium": {
+            "type": "string"
+          },
+          "premiumDepositPercentage": {
+            "type": "string"
+          },
+          "insuredEmailId": {
+            "type": "string"
+          },
+          "primarySiteAndMailingAddressDifferent": {
+            "type": "boolean"
+          },
+          "totalPremium": {
+            "type": "string"
+          },
+          "auditFrequency": {
+            "oneOf": [
+              {
+                "title": "Quarterly",
+                "enum": ["Q"]
+              },
+              {
+                "title": "Semi-annual",
+                "enum": ["S"]
+              },
+              {
+                "title": "Waive",
+                "enum": ["W"]
+              },
+              {
+                "title": "Annual",
+                "enum": ["A"]
+              },
+              {
+                "title": "Monthly",
+                "enum": ["M"]
+              },
+              {
+                "title": "Not Applicable",
+                "enum": ["N"]
+              }
+            ],
+            "type": "string"
+          },
+          "assignmentDate": {
+            "type": "string"
+          },
+          "insuredNameIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "reasonAmend": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "quoteEffectiveDate": {
+            "type": "string",
+            "maxLength": 0
+          },
+          "policyNumber": {
+            "type": "string",
+            "maxLength": 12
+          },
+          "typeOfCoverage": {
+            "oneOf": [
+              {
+                "title": "Standard Workers' Compensation Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Alternative Workers' Compensation Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Group Policy",
+                "enum": ["03"]
+              },
+              {
+                "title": "Other Loss Sensitive Programs",
+                "enum": ["04"]
+              },
+              {
+                "title": "Large Risk Rating Option",
+                "enum": ["05"]
+              },
+              {
+                "title": "Non Standard Workers' Compensation Policy",
+                "enum": ["09"]
+              }
+            ],
+            "type": "string"
+          },
+          "policyPeriod": {
+            "oneOf": [
+              {
+                "title": "3 months",
+                "enum": ["3"]
+              },
+              {
+                "title": "6 months",
+                "enum": ["6"]
+              },
+              {
+                "title": "12 months",
+                "enum": ["12"]
+              },
+              {
+                "title": "Custom",
+                "enum": ["0"]
+              }
+            ],
+            "type": "string"
+          },
+          "legalEntity": {
+            "oneOf": [
+              {
+                "title": "Associate/Labor UN/Relig",
+                "enum": ["AS"]
+              },
+              {
+                "title": "Church/Synagogue",
+                "enum": ["CH"]
+              },
+              {
+                "title": "Co-Employers",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Common Ownership",
+                "enum": ["CO"]
+              },
+              {
+                "title": "Coporate Non-Profit Organization",
+                "enum": ["CN"]
+              },
+              {
+                "title": "Corporation",
+                "enum": ["CP"]
+              },
+              {
+                "title": "County/City",
+                "enum": ["CC"]
+              },
+              {
+                "title": "Estate",
+                "enum": ["ES"]
+              },
+              {
+                "title": "Executor or Trustee",
+                "enum": ["EX"]
+              },
+              {
+                "title": "Fraternity",
+                "enum": ["FR"]
+              },
+              {
+                "title": "Government Agency AGENCY",
+                "enum": ["GA"]
+              },
+              {
+                "title": "Governmental Entity",
+                "enum": ["GE"]
+              },
+              {
+                "title": "Hospital",
+                "enum": ["HO"]
+              },
+              {
+                "title": "Indian Pueblo",
+                "enum": ["IP"]
+              },
+              {
+                "title": "Indian Tribe",
+                "enum": ["IT"]
+              },
+              {
+                "title": "Individual",
+                "enum": ["IN"]
+              },
+              {
+                "title": "Joint Employers",
+                "enum": ["JE"]
+              },
+              {
+                "title": "Joint Venture",
+                "enum": ["JV"]
+              },
+              {
+                "title": "Limited Liability Co",
+                "enum": ["LL"]
+              },
+              {
+                "title": "Limited Liability Partnership",
+                "enum": ["LM"]
+              },
+              {
+                "title": "Limited Partnership",
+                "enum": ["LP"]
+              },
+              {
+                "title": "Multiple Status",
+                "enum": ["MS"]
+              },
+              {
+                "title": "Municipality",
+                "enum": ["MN"]
+              },
+              {
+                "title": "Non-Profit Organization",
+                "enum": ["NP"]
+              },
+              {
+                "title": "Other",
+                "enum": ["OT"]
+              },
+              {
+                "title": "Partnership",
+                "enum": ["PT"]
+              },
+              {
+                "title": "Political Sub-division",
+                "enum": ["PS"]
+              },
+              {
+                "title": "Professional Association",
+                "enum": ["PA"]
+              },
+              {
+                "title": "School",
+                "enum": ["SC"]
+              },
+              {
+                "title": "School Board",
+                "enum": ["SB"]
+              },
+              {
+                "title": "Subchapter S Corp",
+                "enum": ["SS"]
+              },
+              {
+                "title": "Township",
+                "enum": ["TW"]
+              },
+              {
+                "title": "Trust",
+                "enum": ["TR"]
+              },
+              {
+                "title": "Trust or Estate",
+                "enum": ["TE"]
+              },
+              {
+                "title": "Unicorporated Association",
+                "enum": ["UA"]
+              }
+            ],
+            "type": "string"
+          },
+          "issueReason": {
+            "oneOf": [
+              {
+                "title": "Not Selected",
+                "enum": ["N"]
+              },
+              {
+                "title": "Replace a Binder",
+                "enum": ["R"]
+              },
+              {
+                "title": "Synchronize Policy Term",
+                "enum": ["S"]
+              },
+              {
+                "title": "Other - Don't Prorate",
+                "enum": ["O"]
+              }
+            ],
+            "type": ""
+          },
+          "reasonAmended": {
+            "type": "string"
+          },
+          "minimumPremium": {
+            "type": "string"
+          },
+          "nonRenewalIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "voluntaryBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "directAssumed": {
+            "oneOf": [
+              {
+                "title": "Direct",
+                "enum": ["D"]
+              },
+              {
+                "title": "Assumed",
+                "enum": ["A"]
+              }
+            ],
+            "type": ""
+          },
+          "planIndicator": {
+            "oneOf": [
+              {
+                "title": "Voluntary Policy",
+                "enum": ["01"]
+              },
+              {
+                "title": "Normal Assigned Risk Policy",
+                "enum": ["02"]
+              },
+              {
+                "title": "Small Premium Policy Plan",
+                "enum": ["03"]
+              },
+              {
+                "title": "Assigned Risk Policy Voluntary Direct",
+                "enum": ["05"]
+              },
+              {
+                "title": "Assigned Risk Policy Mandatory Direct",
+                "enum": ["06"]
+              }
+            ],
+            "type": "string"
+          },
+          "ardExperienceModificationType": {
+            "oneOf": [
+              {
+                "title": "Preliminary",
+                "enum": ["002"]
+              },
+              {
+                "title": "Contingent",
+                "enum": ["003"]
+              },
+              {
+                "title": "Final",
+                "enum": ["001"]
+              }
+            ],
+            "type": "string"
+          },
+          "links": {
+            "type": "list"
+          },
+          "reinstateFeeInd": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "groupSelection": {
+            "oneOf": [
+              {
+                "title": "Not Applicable",
+                "enum": ["NA"]
+              },
+              {
+                "title": "Independent Schools - Test",
+                "enum": ["DZ"]
+              },
+              {
+                "title": "Independent Schools",
+                "enum": ["IS"]
+              },
+              {
+                "title": "Test - No Questions",
+                "enum": ["MI"]
+              }
+            ],
+            "type": "string"
+          },
+          "ARDassignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "previousPolicyNumber": {
+            "type": "string"
+          },
+          "flexRating": {
+            "oneOf": [
+              {
+                "title": "Yes",
+                "enum": ["Y"]
+              },
+              {
+                "title": "No",
+                "enum": ["N"]
+              }
+            ],
+            "type": ""
+          },
+          "federalEmployerIdNumber": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "previousCarrier": {
+            "type": "string"
+          },
+          "enQuoteModule": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "employersBodilyInjuryDiseaseLimit": {
+            "type": "string"
+          },
+          "typeActivity": {
+            "type": "string"
+          },
+          "producer": {
+            "type": "string"
+          },
+          "addCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "page": {
+            "type": "integer"
+          },
+          "endorseText": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "quoteState": {
+            "type": "string"
+          },
+          "companyLine": {
+            "type": "string"
+          },
+          "insuredPhoneNumber": {
+            "type": "string"
+          },
+          "locationCompany": {
+            "type": "string"
+          },
+          "policyInceptionDate": {
+            "type": "string"
+          },
+          "ARDExperienceModificationRate": {
+            "type": "string"
+          },
+          "anniversaryRateDate": {
+            "type": "string"
+          },
+          "lineofBusiness": {
+            "type": "string"
+          },
+          "clientSeqNumber": {
+            "type": "string",
+            "maxLength": 9
+          },
+          "deleteCoverageIndicator": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "totalPageCount": {
+            "type": "integer"
+          },
+          "voluntaryDiseasePolicyLimit": {
+            "type": "string"
+          },
+          "addressSeqNumber": {
+            "type": "string",
+            "maxLength": 5
+          },
+          "employersBodilyInjuryLimit": {
+            "type": "string"
+          },
+          "assignedRiskAdjustmentProgramRate": {
+            "type": "string"
+          },
+          "enteredDate": {
+            "type": "string"
+          },
+          "experienceModificationRate": {
+            "type": "string"
+          },
+          "reasonAmendDigit1": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "customerNumber": {
+            "type": "string"
+          },
+          "contractCurrentStatus": {
+            "type": "string"
+          },
+          "reasonAmendDigit3": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "reasonAmendDigit2": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "agencyNumber": {
+            "type": "string",
+            "maxLength": 7
+          },
+          "masterCompany": {
+            "type": "string"
+          },
+          "isContractInError": {
+            "type": "boolean"
+          },
+          "issueDescription": {
+            "type": "string"
+          },
+          "payPlan": {
+            "oneOf": [
+              {
+                "title": "Agency Bill                   -Annual 1 installment",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -A0 - Annual Pay",
+                "enum": ["A0"]
+              },
+              {
+                "title": "Agency Bill                   -Quarterly",
+                "enum": ["A4"]
+              },
+              {
+                "title": "Broker Bill                   -B0-Annual",
+                "enum": ["B0"]
+              },
+              {
+                "title": "Broker Bill                   -BB- Semi-annual",
+                "enum": ["B1"]
+              },
+              {
+                "title": "Broker Bill                   -B4-Quaterly",
+                "enum": ["B4"]
+              },
+              {
+                "title": "Broker Bill                   -B6- 12 inst, % SC",
+                "enum": ["B6"]
+              },
+              {
+                "title": "Broker Bill                   -B7- 3 installments",
+                "enum": ["B7"]
+              },
+              {
+                "title": "Broker Bill                   -12 installments",
+                "enum": ["B8"]
+              },
+              {
+                "title": "Customer Bill-CE-Auto inst generat",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-CE - equal install",
+                "enum": ["CE"]
+              },
+              {
+                "title": "Customer Bill-C0 - pre-paid (C)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-Full pay (Curr/Fut)",
+                "enum": ["C0"]
+              },
+              {
+                "title": "Customer Bill-C4- quarterly",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C4- 4 pay (C)",
+                "enum": ["C4"]
+              },
+              {
+                "title": "Customer Bill-C5 - 4 pay (F)",
+                "enum": ["C5"]
+              },
+              {
+                "title": "Customer Bill-C9 - 12 pay (B)",
+                "enum": ["C9"]
+              },
+              {
+                "title": "Direct Bill- Direct Bill",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D0- 1 installment",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-1 inst/100%",
+                "enum": ["D0"]
+              },
+              {
+                "title": "Direct Bill-D4-Quarterly",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D4 - 4 inst/3 mo",
+                "enum": ["D4"]
+              },
+              {
+                "title": "Direct Bill-D6- 10 installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D6 - 12 Installments",
+                "enum": ["D6"]
+              },
+              {
+                "title": "Direct Bill-D8- 12 install",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D8 - 10 installments",
+                "enum": ["D8"]
+              },
+              {
+                "title": "Direct Bill-D9- 12 install",
+                "enum": ["D9"]
+              },
+              {
+                "title": "Direct Bill-D9 - 9 installments",
+                "enum": ["D9"]
+              }
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "state",
+          "quoteExpirationDate",
+          "fullMasterCompany",
+          "policyPeriod",
+          "quoteEffectiveDate",
+          "addressSeqNumber",
+          "clientSeqNumber",
+          "agencyNumber"
+        ]
+      }
+    }
+  ],
+  "properties": {
+    "goPaperless": {
+      "type": "boolean"
+    },
+    "quoteExpirationDate": {
+      "type": "string",
+      "maxLength": 0
+    },
+    "premiumDiscount": {
+      "type": "string"
+    },
+    "renewalPayPlan": {
+      "oneOf": [
+        {
+          "title": "Agency Bill                   -Annual 1 installment",
+          "enum": ["A0"]
+        },
+        {
+          "title": "Agency Bill                   -A0 - Annual Pay",
+          "enum": ["A0"]
+        },
+        {
+          "title": "Agency Bill                   -Quarterly",
+          "enum": ["A4"]
+        },
+        {
+          "title": "Broker Bill                   -B0-Annual",
+          "enum": ["B0"]
+        },
+        {
+          "title": "Broker Bill                   -BB- Semi-annual",
+          "enum": ["B1"]
+        },
+        {
+          "title": "Broker Bill                   -B4-Quaterly",
+          "enum": ["B4"]
+        },
+        {
+          "title": "Broker Bill                   -B6- 12 inst, % SC",
+          "enum": ["B6"]
+        },
+        {
+          "title": "Broker Bill                   -B7- 3 installments",
+          "enum": ["B7"]
+        },
+        {
+          "title": "Broker Bill                   -12 installments",
+          "enum": ["B8"]
+        },
+        {
+          "title": "Customer Bill-CE-Auto inst generat",
+          "enum": ["CE"]
+        },
+        {
+          "title": "Customer Bill-CE - equal install",
+          "enum": ["CE"]
+        },
+        {
+          "title": "Customer Bill-C0 - pre-paid (C)",
+          "enum": ["C0"]
+        },
+        {
+          "title": "Customer Bill-Full pay (Curr/Fut)",
+          "enum": ["C0"]
+        },
+        {
+          "title": "Customer Bill-C4- quarterly",
+          "enum": ["C4"]
+        },
+        {
+          "title": "Customer Bill-C4- 4 pay (C)",
+          "enum": ["C4"]
+        },
+        {
+          "title": "Customer Bill-C5 - 4 pay (F)",
+          "enum": ["C5"]
+        },
+        {
+          "title": "Customer Bill-C9 - 12 pay (B)",
+          "enum": ["C9"]
+        },
+        {
+          "title": "Direct Bill- Direct Bill",
+          "enum": ["D0"]
+        },
+        {
+          "title": "Direct Bill-D0- 1 installment",
+          "enum": ["D0"]
+        },
+        {
+          "title": "Direct Bill-1 inst/100%",
+          "enum": ["D0"]
+        },
+        {
+          "title": "Direct Bill-D4-Quarterly",
+          "enum": ["D4"]
+        },
+        {
+          "title": "Direct Bill-D4 - 4 inst/3 mo",
+          "enum": ["D4"]
+        },
+        {
+          "title": "Direct Bill-D6- 10 installments",
+          "enum": ["D6"]
+        },
+        {
+          "title": "Direct Bill-D6 - 12 Installments",
+          "enum": ["D6"]
+        },
+        {
+          "title": "Direct Bill-D8- 12 install",
+          "enum": ["D8"]
+        },
+        {
+          "title": "Direct Bill-D8 - 10 installments",
+          "enum": ["D8"]
+        },
+        {
+          "title": "Direct Bill-D9- 12 install",
+          "enum": ["D9"]
+        },
+        {
+          "title": "Direct Bill-D9 - 9 installments",
+          "enum": ["D9"]
+        }
+      ],
+      "type": "string"
+    },
+    "voluntaryBodilyInjuryDiseaseLimit": {
+      "type": "string"
+    },
+    "isNCCISwitchOn": {
+      "type": "boolean"
+    },
+    "employersLiabilityPremium": {
+      "type": "string"
+    },
+    "voluntaryCompensation": {
+      "type": "string"
+    },
+    "depositPremiumAmount": {
+      "type": "string"
+    },
+    "totalCommission": {
+      "type": "string"
+    },
+    "branch": {
+      "type": "string"
+    },
+    "userID": {
+      "type": "string"
+    },
+    "renewalOption": {
+      "oneOf": [
+        {
+          "title": "Alright For Agent To Renew",
+          "enum": ["0"]
+        },
+        {
+          "title": "Computer Renew",
+          "enum": ["1"]
+        },
+        {
+          "title": "Alright For Home Office To Renew",
+          "enum": ["2"]
+        },
+        {
+          "title": "Already Renewed",
+          "enum": ["3"]
+        },
+        {
+          "title": "Agent Issued First Policy, Computer To Renew",
+          "enum": ["4"]
+        },
+        {
+          "title": "Non-Renewal With A Notice",
+          "enum": ["7"]
+        },
+        {
+          "title": "Non-Renewal Without A Notice",
+          "enum": ["8"]
+        }
+      ],
+      "type": ""
+    },
+    "commissionOverridePercentage": {
+      "type": "string"
+    },
+    "employersLiabilityLimits": {
+      "oneOf": [
+        {
+          "title": "100/100/1000",
+          "enum": ["100/100/1000"]
+        },
+        {
+          "title": "100/100/10000",
+          "enum": ["100/100/10000"]
+        },
+        {
+          "title": "100/100/2000",
+          "enum": ["100/100/2000"]
+        },
+        {
+          "title": "100/100/500",
+          "enum": ["100/100/500"]
+        },
+        {
+          "title": "100/100/5000",
+          "enum": ["100/100/5000"]
+        },
+        {
+          "title": "1000/1000/1000",
+          "enum": ["1000/1000/1000"]
+        },
+        {
+          "title": "1000/1000/2000",
+          "enum": ["1000/1000/2000"]
+        },
+        {
+          "title": "1000/1000/5000",
+          "enum": ["1000/1000/5000"]
+        },
+        {
+          "title": "2000/2000/2000",
+          "enum": ["2000/2000/2000"]
+        },
+        {
+          "title": "500/500/1000",
+          "enum": ["500/500/1000"]
+        },
+        {
+          "title": "500/500/10000",
+          "enum": ["500/500/10000"]
+        },
+        {
+          "title": "500/500/2000",
+          "enum": ["500/500/2000"]
+        },
+        {
+          "title": "500/500/500",
+          "enum": ["500/500/500"]
+        },
+        {
+          "title": "500/500/5000",
+          "enum": ["500/500/5000"]
+        },
+        {
+          "title": "5000/5000/5000",
+          "enum": ["5000/5000/5000"]
+        }
+      ],
+      "type": "string"
+    },
+    "state": {
+      "oneOf": [
+        {
+          "title": "Alabama",
+          "enum": ["AL"]
+        },
+        {
+          "title": "Alaska",
+          "enum": ["AK"]
+        },
+        {
+          "title": "Arizona",
+          "enum": ["AZ"]
+        },
+        {
+          "title": "Arkansas",
+          "enum": ["AR"]
+        },
+        {
+          "title": "California",
+          "enum": ["CA"]
+        },
+        {
+          "title": "Colorado",
+          "enum": ["CO"]
+        },
+        {
+          "title": "Connecticut",
+          "enum": ["CT"]
+        },
+        {
+          "title": "Delaware",
+          "enum": ["DE"]
+        },
+        {
+          "title": "District of Columbia",
+          "enum": ["DC"]
+        },
+        {
+          "title": "Florida",
+          "enum": ["FL"]
+        },
+        {
+          "title": "Georgia",
+          "enum": ["GA"]
+        },
+        {
+          "title": "Guam",
+          "enum": ["GU"]
+        },
+        {
+          "title": "Hawaii",
+          "enum": ["HI"]
+        },
+        {
+          "title": "Idaho",
+          "enum": ["ID"]
+        },
+        {
+          "title": "Illinois",
+          "enum": ["IL"]
+        },
+        {
+          "title": "Indiana",
+          "enum": ["IN"]
+        },
+        {
+          "title": "Iowa",
+          "enum": ["IA"]
+        },
+        {
+          "title": "Kansas",
+          "enum": ["KS"]
+        },
+        {
+          "title": "Kentucky",
+          "enum": ["KY"]
+        },
+        {
+          "title": "Louisiana",
+          "enum": ["LA"]
+        },
+        {
+          "title": "Maine",
+          "enum": ["ME"]
+        },
+        {
+          "title": "Manitoba",
+          "enum": ["MB"]
+        },
+        {
+          "title": "Maryland",
+          "enum": ["MD"]
+        },
+        {
+          "title": "Massachusetts",
+          "enum": ["MA"]
+        },
+        {
+          "title": "Michigan",
+          "enum": ["MI"]
+        },
+        {
+          "title": "Minas Gerais",
+          "enum": ["MG"]
+        },
+        {
+          "title": "Minnesota",
+          "enum": ["MN"]
+        },
+        {
+          "title": "Mississippi",
+          "enum": ["MS"]
+        },
+        {
+          "title": "Missouri",
+          "enum": ["MO"]
+        },
+        {
+          "title": "Montana",
+          "enum": ["MT"]
+        },
+        {
+          "title": "Nebraska",
+          "enum": ["NE"]
+        },
+        {
+          "title": "Nevada",
+          "enum": ["NV"]
+        },
+        {
+          "title": "New Hampshire",
+          "enum": ["NH"]
+        },
+        {
+          "title": "New Jersey",
+          "enum": ["NJ"]
+        },
+        {
+          "title": "New Mexico",
+          "enum": ["NM"]
+        },
+        {
+          "title": "New York",
+          "enum": ["NY"]
+        },
+        {
+          "title": "Newfoundland",
+          "enum": ["NF"]
+        },
+        {
+          "title": "North Carolina",
+          "enum": ["NC"]
+        },
+        {
+          "title": "North Dakota",
+          "enum": ["ND"]
+        },
+        {
+          "title": "Northwest Territories",
+          "enum": ["NW"]
+        },
+        {
+          "title": "Ohio",
+          "enum": ["OH"]
+        },
+        {
+          "title": "Oklahoma",
+          "enum": ["OK"]
+        },
+        {
+          "title": "Ontario",
+          "enum": ["ON"]
+        },
+        {
+          "title": "Oregon",
+          "enum": ["OR"]
+        },
+        {
+          "title": "Pennsylvania",
+          "enum": ["PA"]
+        },
+        {
+          "title": "Puerto Rico",
+          "enum": ["PR"]
+        },
+        {
+          "title": "Quebec",
+          "enum": ["PQ"]
+        },
+        {
+          "title": "Rhode Island",
+          "enum": ["RI"]
+        },
+        {
+          "title": "Saskatchewan",
+          "enum": ["SA"]
+        },
+        {
+          "title": "South Carolina",
+          "enum": ["SC"]
+        },
+        {
+          "title": "South Dakota",
+          "enum": ["SD"]
+        },
+        {
+          "title": "Tennessee",
+          "enum": ["TN"]
+        },
+        {
+          "title": "Texas",
+          "enum": ["TX"]
+        },
+        {
+          "title": "United States",
+          "enum": ["US"]
+        },
+        {
+          "title": "Utah",
+          "enum": ["UT"]
+        },
+        {
+          "title": "Vermont",
+          "enum": ["VT"]
+        },
+        {
+          "title": "Virgin Islands",
+          "enum": ["VI"]
+        },
+        {
+          "title": "Virginia",
+          "enum": ["VA"]
+        },
+        {
+          "title": "Washington",
+          "enum": ["WA"]
+        },
+        {
+          "title": "West Virginia",
+          "enum": ["WV"]
+        },
+        {
+          "title": "Wisconsin",
+          "enum": ["WI"]
+        },
+        {
+          "title": "Wyoming",
+          "enum": ["WY"]
+        },
+        {
+          "title": "Yukon",
+          "enum": ["YN"]
+        }
+      ],
+      "type": "string"
+    },
+    "felaBodilyInjuryLimit": {
+      "oneOf": [
+        {
+          "title": "0",
+          "enum": ["0"]
+        },
+        {
+          "title": "100",
+          "enum": ["100"]
+        },
+        {
+          "title": "150",
+          "enum": ["150"]
+        },
+        {
+          "title": "200",
+          "enum": ["200"]
+        },
+        {
+          "title": "250",
+          "enum": ["250"]
+        },
+        {
+          "title": "300",
+          "enum": ["300"]
+        },
+        {
+          "title": "400",
+          "enum": ["400"]
+        },
+        {
+          "title": "500",
+          "enum": ["500"]
+        },
+        {
+          "title": "600",
+          "enum": ["600"]
+        },
+        {
+          "title": "700",
+          "enum": ["700"]
+        },
+        {
+          "title": "800",
+          "enum": ["800"]
+        },
+        {
+          "title": "900",
+          "enum": ["900"]
+        },
+        {
+          "title": "1000",
+          "enum": ["1000"]
+        },
+        {
+          "title": "1500",
+          "enum": ["1500"]
+        },
+        {
+          "title": "2000",
+          "enum": ["2000"]
+        },
+        {
+          "title": "2500",
+          "enum": ["2500"]
+        },
+        {
+          "title": "3000",
+          "enum": ["3000"]
+        },
+        {
+          "title": "3500",
+          "enum": ["3500"]
+        },
+        {
+          "title": "4000",
+          "enum": ["4000"]
+        },
+        {
+          "title": "4500",
+          "enum": ["4500"]
+        },
+        {
+          "title": "5000",
+          "enum": ["5000"]
+        },
+        {
+          "title": "6000",
+          "enum": ["6000"]
+        },
+        {
+          "title": "7000",
+          "enum": ["7000"]
+        },
+        {
+          "title": "8000",
+          "enum": ["8000"]
+        },
+        {
+          "title": "9000",
+          "enum": ["9000"]
+        },
+        {
+          "title": "10000",
+          "enum": ["10000"]
+        },
+        {
+          "title": "15000",
+          "enum": ["15000"]
+        },
+        {
+          "title": "20000",
+          "enum": ["20000"]
+        },
+        {
+          "title": "25000",
+          "enum": ["25000"]
+        }
+      ],
+      "type": "string"
+    },
+    "policyCurrency": {
+      "type": "string"
+    },
+    "employersDiseasePolicyLimit": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "NCCIInterstateID": {
+      "type": "string"
+    },
+    "expenseConstant": {
+      "type": "string"
+    },
+    "voluntryComprehensiveLimits": {
+      "oneOf": [
+        {
+          "title": "100/100/500",
+          "enum": ["100/100/500"]
+        },
+        {
+          "title": "1000/1000/1000",
+          "enum": ["1000/1000/1000"]
+        },
+        {
+          "title": "500/500/500",
+          "enum": ["500/500/500"]
+        }
+      ],
+      "type": "string"
+    },
+    "quoteNumber": {
+      "type": "string"
+    },
+    "isInsuredAddressUpdated": {
+      "type": "boolean"
+    },
+    "fullMasterCompany": {
+      "oneOf": [
+        {
+          "title": "QA - 00(00,05,00)",
+          "enum": ["000500"]
+        }
+      ],
+      "type": "string"
+    },
+    "recalcUsingCurrentRates": {
+      "oneOf": [
+        {
+          "title": "Yes",
+          "enum": ["Y"]
+        },
+        {
+          "title": "No",
+          "enum": ["N"]
+        }
+      ],
+      "type": ""
+    },
+    "size": {
+      "type": "integer"
+    },
+    "enQuoteSymbol": {
+      "type": "string",
+      "maxLength": 3
+    },
+    "nonStandardIndicator": {
+      "oneOf": [
+        {
+          "title": "Non Standard does not apply",
+          "enum": ["01"]
+        },
+        {
+          "title": "Excluding Medical",
+          "enum": ["02"]
+        },
+        {
+          "title": "Reserved for future use",
+          "enum": ["03"]
+        },
+        {
+          "title": "Reserved for future use",
+          "enum": ["04"]
+        },
+        {
+          "title": "Excess",
+          "enum": ["05"]
+        },
+        {
+          "title": "Excess Medical",
+          "enum": ["06"]
+        },
+        {
+          "title": "Reserved for future use",
+          "enum": ["07"]
+        },
+        {
+          "title": "State Act Excluding Officers, Partners, Sole Prop",
+          "enum": ["08"]
+        },
+        {
+          "title": "Voluntary Coverage Not Mandatory",
+          "enum": ["09"]
+        },
+        {
+          "title": "Self Insured Group",
+          "enum": ["99"]
+        }
+      ],
+      "type": "string"
+    },
+    "premiumDepositOverride": {
+      "oneOf": [
+        {
+          "title": "Yes",
+          "enum": ["Y"]
+        },
+        {
+          "title": "No",
+          "enum": ["N"]
+        }
+      ],
+      "type": ""
+    },
+    "lossConstant": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "extension": {
+      "type": "string"
+    },
+    "rewriteOfPolicyNumber": {
+      "type": "string"
+    },
+    "enQuoteNumber": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "reissueOfPolicyNumber": {
+      "type": "string"
+    },
+    "previousEffectiveDate": {
+      "type": "string"
+    },
+    "profitCentre": {
+      "type": "string"
+    },
+    "employersLiabilityMinimum": {
+      "type": "string"
+    },
+    "experienceModificationType": {
+      "oneOf": [
+        {
+          "title": "Preliminary",
+          "enum": ["002"]
+        },
+        {
+          "title": "Contingent",
+          "enum": ["003"]
+        },
+        {
+          "title": "Final",
+          "enum": ["001"]
+        }
+      ],
+      "type": "string"
+    },
+    "policyCompany": {
+      "type": "string"
+    },
+    "premium": {
+      "type": "string"
+    },
+    "premiumDepositPercentage": {
+      "type": "string"
+    },
+    "insuredEmailId": {
+      "type": "string"
+    },
+    "primarySiteAndMailingAddressDifferent": {
+      "type": "boolean"
+    },
+    "totalPremium": {
+      "type": "string"
+    },
+    "auditFrequency": {
+      "oneOf": [
+        {
+          "title": "Quarterly",
+          "enum": ["Q"]
+        },
+        {
+          "title": "Semi-annual",
+          "enum": ["S"]
+        },
+        {
+          "title": "Waive",
+          "enum": ["W"]
+        },
+        {
+          "title": "Annual",
+          "enum": ["A"]
+        },
+        {
+          "title": "Monthly",
+          "enum": ["M"]
+        },
+        {
+          "title": "Not Applicable",
+          "enum": ["N"]
+        }
+      ],
+      "type": "string"
+    },
+    "assignmentDate": {
+      "type": "string"
+    },
+    "insuredNameIndicator": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "reasonAmend": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "quoteEffectiveDate": {
+      "type": "string",
+      "maxLength": 0
+    },
+    "policyNumber": {
+      "type": "string",
+      "maxLength": 12
+    },
+    "typeOfCoverage": {
+      "oneOf": [
+        {
+          "title": "Standard Workers' Compensation Policy",
+          "enum": ["01"]
+        },
+        {
+          "title": "Alternative Workers' Compensation Policy",
+          "enum": ["02"]
+        },
+        {
+          "title": "Group Policy",
+          "enum": ["03"]
+        },
+        {
+          "title": "Other Loss Sensitive Programs",
+          "enum": ["04"]
+        },
+        {
+          "title": "Large Risk Rating Option",
+          "enum": ["05"]
+        },
+        {
+          "title": "Non Standard Workers' Compensation Policy",
+          "enum": ["09"]
+        }
+      ],
+      "type": "string"
+    },
+    "policyPeriod": {
+      "oneOf": [
+        {
+          "title": "3 months",
+          "enum": ["3"]
+        },
+        {
+          "title": "6 months",
+          "enum": ["6"]
+        },
+        {
+          "title": "12 months",
+          "enum": ["12"]
+        },
+        {
+          "title": "Custom",
+          "enum": ["0"]
+        }
+      ],
+      "type": "string"
+    },
+    "legalEntity": {
+      "oneOf": [
+        {
+          "title": "Associate/Labor UN/Relig",
+          "enum": ["AS"]
+        },
+        {
+          "title": "Church/Synagogue",
+          "enum": ["CH"]
+        },
+        {
+          "title": "Co-Employers",
+          "enum": ["CE"]
+        },
+        {
+          "title": "Common Ownership",
+          "enum": ["CO"]
+        },
+        {
+          "title": "Coporate Non-Profit Organization",
+          "enum": ["CN"]
+        },
+        {
+          "title": "Corporation",
+          "enum": ["CP"]
+        },
+        {
+          "title": "County/City",
+          "enum": ["CC"]
+        },
+        {
+          "title": "Estate",
+          "enum": ["ES"]
+        },
+        {
+          "title": "Executor or Trustee",
+          "enum": ["EX"]
+        },
+        {
+          "title": "Fraternity",
+          "enum": ["FR"]
+        },
+        {
+          "title": "Government Agency AGENCY",
+          "enum": ["GA"]
+        },
+        {
+          "title": "Governmental Entity",
+          "enum": ["GE"]
+        },
+        {
+          "title": "Hospital",
+          "enum": ["HO"]
+        },
+        {
+          "title": "Indian Pueblo",
+          "enum": ["IP"]
+        },
+        {
+          "title": "Indian Tribe",
+          "enum": ["IT"]
+        },
+        {
+          "title": "Individual",
+          "enum": ["IN"]
+        },
+        {
+          "title": "Joint Employers",
+          "enum": ["JE"]
+        },
+        {
+          "title": "Joint Venture",
+          "enum": ["JV"]
+        },
+        {
+          "title": "Limited Liability Co",
+          "enum": ["LL"]
+        },
+        {
+          "title": "Limited Liability Partnership",
+          "enum": ["LM"]
+        },
+        {
+          "title": "Limited Partnership",
+          "enum": ["LP"]
+        },
+        {
+          "title": "Multiple Status",
+          "enum": ["MS"]
+        },
+        {
+          "title": "Municipality",
+          "enum": ["MN"]
+        },
+        {
+          "title": "Non-Profit Organization",
+          "enum": ["NP"]
+        },
+        {
+          "title": "Other",
+          "enum": ["OT"]
+        },
+        {
+          "title": "Partnership",
+          "enum": ["PT"]
+        },
+        {
+          "title": "Political Sub-division",
+          "enum": ["PS"]
+        },
+        {
+          "title": "Professional Association",
+          "enum": ["PA"]
+        },
+        {
+          "title": "School",
+          "enum": ["SC"]
+        },
+        {
+          "title": "School Board",
+          "enum": ["SB"]
+        },
+        {
+          "title": "Subchapter S Corp",
+          "enum": ["SS"]
+        },
+        {
+          "title": "Township",
+          "enum": ["TW"]
+        },
+        {
+          "title": "Trust",
+          "enum": ["TR"]
+        },
+        {
+          "title": "Trust or Estate",
+          "enum": ["TE"]
+        },
+        {
+          "title": "Unicorporated Association",
+          "enum": ["UA"]
+        }
+      ],
+      "type": "string"
+    },
+    "issueReason": {
+      "oneOf": [
+        {
+          "title": "Not Selected",
+          "enum": ["N"]
+        },
+        {
+          "title": "Replace a Binder",
+          "enum": ["R"]
+        },
+        {
+          "title": "Synchronize Policy Term",
+          "enum": ["S"]
+        },
+        {
+          "title": "Other - Don't Prorate",
+          "enum": ["O"]
+        }
+      ],
+      "type": ""
+    },
+    "reasonAmended": {
+      "type": "string"
+    },
+    "minimumPremium": {
+      "type": "string"
+    },
+    "nonRenewalIndicator": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "voluntaryBodilyInjuryLimit": {
+      "type": "string"
+    },
+    "directAssumed": {
+      "oneOf": [
+        {
+          "title": "Direct",
+          "enum": ["D"]
+        },
+        {
+          "title": "Assumed",
+          "enum": ["A"]
+        }
+      ],
+      "type": ""
+    },
+    "planIndicator": {
+      "oneOf": [
+        {
+          "title": "Voluntary Policy",
+          "enum": ["01"]
+        },
+        {
+          "title": "Normal Assigned Risk Policy",
+          "enum": ["02"]
+        },
+        {
+          "title": "Small Premium Policy Plan",
+          "enum": ["03"]
+        },
+        {
+          "title": "Assigned Risk Policy Voluntary Direct",
+          "enum": ["05"]
+        },
+        {
+          "title": "Assigned Risk Policy Mandatory Direct",
+          "enum": ["06"]
+        }
+      ],
+      "type": "string"
+    },
+    "ardExperienceModificationType": {
+      "oneOf": [
+        {
+          "title": "Preliminary",
+          "enum": ["002"]
+        },
+        {
+          "title": "Contingent",
+          "enum": ["003"]
+        },
+        {
+          "title": "Final",
+          "enum": ["001"]
+        }
+      ],
+      "type": "string"
+    },
+    "links": {
+      "type": "list"
+    },
+    "reinstateFeeInd": {
+      "oneOf": [
+        {
+          "title": "Yes",
+          "enum": ["Y"]
+        },
+        {
+          "title": "No",
+          "enum": ["N"]
+        }
+      ],
+      "type": ""
+    },
+    "groupSelection": {
+      "oneOf": [
+        {
+          "title": "Not Applicable",
+          "enum": ["NA"]
+        },
+        {
+          "title": "Independent Schools - Test",
+          "enum": ["DZ"]
+        },
+        {
+          "title": "Independent Schools",
+          "enum": ["IS"]
+        },
+        {
+          "title": "Test - No Questions",
+          "enum": ["MI"]
+        }
+      ],
+      "type": "string"
+    },
+    "ARDassignedRiskAdjustmentProgramRate": {
+      "type": "string"
+    },
+    "previousPolicyNumber": {
+      "type": "string"
+    },
+    "flexRating": {
+      "oneOf": [
+        {
+          "title": "Yes",
+          "enum": ["Y"]
+        },
+        {
+          "title": "No",
+          "enum": ["N"]
+        }
+      ],
+      "type": ""
+    },
+    "federalEmployerIdNumber": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "previousCarrier": {
+      "type": "string"
+    },
+    "enQuoteModule": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "employersBodilyInjuryDiseaseLimit": {
+      "type": "string"
+    },
+    "typeActivity": {
+      "type": "string"
+    },
+    "producer": {
+      "type": "string"
+    },
+    "addCoverageIndicator": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "page": {
+      "type": "integer"
+    },
+    "endorseText": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "quoteState": {
+      "type": "string"
+    },
+    "companyLine": {
+      "type": "string"
+    },
+    "insuredPhoneNumber": {
+      "type": "string"
+    },
+    "locationCompany": {
+      "type": "string"
+    },
+    "policyInceptionDate": {
+      "type": "string"
+    },
+    "ARDExperienceModificationRate": {
+      "type": "string"
+    },
+    "anniversaryRateDate": {
+      "type": "string"
+    },
+    "lineofBusiness": {
+      "type": "string"
+    },
+    "clientSeqNumber": {
+      "type": "string",
+      "maxLength": 9
+    },
+    "deleteCoverageIndicator": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "totalPageCount": {
+      "type": "integer"
+    },
+    "voluntaryDiseasePolicyLimit": {
+      "type": "string"
+    },
+    "addressSeqNumber": {
+      "type": "string",
+      "maxLength": 5
+    },
+    "employersBodilyInjuryLimit": {
+      "type": "string"
+    },
+    "assignedRiskAdjustmentProgramRate": {
+      "type": "string"
+    },
+    "enteredDate": {
+      "type": "string"
+    },
+    "experienceModificationRate": {
+      "type": "string"
+    },
+    "reasonAmendDigit1": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "customerNumber": {
+      "type": "string"
+    },
+    "contractCurrentStatus": {
+      "type": "string"
+    },
+    "reasonAmendDigit3": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "reasonAmendDigit2": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "agencyNumber": {
+      "type": "string",
+      "maxLength": 7
+    },
+    "masterCompany": {
+      "type": "string"
+    },
+    "isContractInError": {
+      "type": "boolean"
+    },
+    "issueDescription": {
+      "type": "string"
+    },
+    "payPlan": {
+      "oneOf": [
+        {
+          "title": "Agency Bill                   -Annual 1 installment",
+          "enum": ["A0"]
+        },
+        {
+          "title": "Agency Bill                   -A0 - Annual Pay",
+          "enum": ["A0"]
+        },
+        {
+          "title": "Agency Bill                   -Quarterly",
+          "enum": ["A4"]
+        },
+        {
+          "title": "Broker Bill                   -B0-Annual",
+          "enum": ["B0"]
+        },
+        {
+          "title": "Broker Bill                   -BB- Semi-annual",
+          "enum": ["B1"]
+        },
+        {
+          "title": "Broker Bill                   -B4-Quaterly",
+          "enum": ["B4"]
+        },
+        {
+          "title": "Broker Bill                   -B6- 12 inst, % SC",
+          "enum": ["B6"]
+        },
+        {
+          "title": "Broker Bill                   -B7- 3 installments",
+          "enum": ["B7"]
+        },
+        {
+          "title": "Broker Bill                   -12 installments",
+          "enum": ["B8"]
+        },
+        {
+          "title": "Customer Bill-CE-Auto inst generat",
+          "enum": ["CE"]
+        },
+        {
+          "title": "Customer Bill-CE - equal install",
+          "enum": ["CE"]
+        },
+        {
+          "title": "Customer Bill-C0 - pre-paid (C)",
+          "enum": ["C0"]
+        },
+        {
+          "title": "Customer Bill-Full pay (Curr/Fut)",
+          "enum": ["C0"]
+        },
+        {
+          "title": "Customer Bill-C4- quarterly",
+          "enum": ["C4"]
+        },
+        {
+          "title": "Customer Bill-C4- 4 pay (C)",
+          "enum": ["C4"]
+        },
+        {
+          "title": "Customer Bill-C5 - 4 pay (F)",
+          "enum": ["C5"]
+        },
+        {
+          "title": "Customer Bill-C9 - 12 pay (B)",
+          "enum": ["C9"]
+        },
+        {
+          "title": "Direct Bill- Direct Bill",
+          "enum": ["D0"]
+        },
+        {
+          "title": "Direct Bill-D0- 1 installment",
+          "enum": ["D0"]
+        },
+        {
+          "title": "Direct Bill-1 inst/100%",
+          "enum": ["D0"]
+        },
+        {
+          "title": "Direct Bill-D4-Quarterly",
+          "enum": ["D4"]
+        },
+        {
+          "title": "Direct Bill-D4 - 4 inst/3 mo",
+          "enum": ["D4"]
+        },
+        {
+          "title": "Direct Bill-D6- 10 installments",
+          "enum": ["D6"]
+        },
+        {
+          "title": "Direct Bill-D6 - 12 Installments",
+          "enum": ["D6"]
+        },
+        {
+          "title": "Direct Bill-D8- 12 install",
+          "enum": ["D8"]
+        },
+        {
+          "title": "Direct Bill-D8 - 10 installments",
+          "enum": ["D8"]
+        },
+        {
+          "title": "Direct Bill-D9- 12 install",
+          "enum": ["D9"]
+        },
+        {
+          "title": "Direct Bill-D9 - 9 installments",
+          "enum": ["D9"]
+        }
+      ],
+      "type": "string"
+    }
+  },
+  "title": "Options available on Quote ID",
+  "required": [
+    "state",
+    "quoteExpirationDate",
+    "fullMasterCompany",
+    "policyPeriod",
+    "quoteEffectiveDate",
+    "addressSeqNumber",
+    "clientSeqNumber",
+    "agencyNumber"
+  ]
+}
