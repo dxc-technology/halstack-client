@@ -6,13 +6,14 @@
     "type": "git",
     "url": "https://github.com/dxc-technology/dxc-halstack-client"
   },
-  "main": "./main.js",
+  "main": "./main.cjs",
+  "module": "./main.js",
   "scripts": {
     "bundle": "rollup -c",
     "copy": "node ./scripts/build/copy-distribution-files.js",
     "start": "rollup -c -w",
     "build": "npm run bundle && npm run copy",
-    "test": "jest",
+    "test": "jest --transformIgnorePatterns node_modules/?!axios/",
     "test:watch": "npm test -- --watch --coverage",
     "test:coverage": "npm test -- --coverage --coverageReporters=cobertura",
     "test:coverage-dashboard": "npm test --collect-coverage"
@@ -20,9 +21,10 @@
   "author": "DXC Halstack team",
   "license": "Apache v2.0",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "7.23.2",
     "@babel/plugin-proposal-optional-chaining": "^7.8.3",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-env": "7.23.2",
+    "axios-mock-adapter": "^1.22.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.5.1",
@@ -39,6 +41,6 @@
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^0.21.0"
+    "axios": "^1.6.2"
   }
 }
