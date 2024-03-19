@@ -1,11 +1,15 @@
 import React from "react";
-import { HalResource } from "@dxc-technology/halstack-client";
+import { HalApiCaller, HalResource } from "@dxc-technology/halstack-client";
 
 import "./App.css";
 
 const App = () => {
   const colRes = HalResource(collectionResource);
   const itemRes = HalResource(itemResource);
+
+  HalApiCaller.get({
+    url: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
+  });
 
   return (
     <div className="App">
@@ -21,9 +25,8 @@ const collectionResource = {
   _links: {
     self: {
       name: "Users Collection",
-      href:
-        "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
-      title: "Users Collection"
+      href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
+      title: "Users Collection",
     },
     item: [
       {
@@ -32,12 +35,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-04T14:51:44.372Z",
-          "latest-update-date": "2020-03-04T14:51:44.372Z"
+          "latest-update-date": "2020-03-04T14:51:44.372Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
+        title: "User",
       },
       {
         summary: {
@@ -45,12 +47,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-04T14:58:04.146Z",
-          "latest-update-date": "2020-03-04T14:58:04.146Z"
+          "latest-update-date": "2020-03-04T14:58:04.146Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasdasd",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasdasd",
+        title: "User",
       },
       {
         summary: {
@@ -58,12 +59,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-04T14:59:40.251Z",
-          "latest-update-date": "2020-03-04T14:59:40.251Z"
+          "latest-update-date": "2020-03-04T14:59:40.251Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasdasdasd",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasdasdasd",
+        title: "User",
       },
       {
         summary: {
@@ -71,12 +71,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-04T16:31:56.233Z",
-          "latest-update-date": "2020-03-04T16:31:56.233Z"
+          "latest-update-date": "2020-03-04T16:31:56.233Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/awefawefawefawefawe",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/awefawefawefawefawe",
+        title: "User",
       },
       {
         summary: {
@@ -84,12 +83,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T16:07:29.106Z",
-          "latest-update-date": "2020-03-06T16:07:29.106Z"
+          "latest-update-date": "2020-03-06T16:07:29.106Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/dagesargsertsre4564",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/dagesargsertsre4564",
+        title: "User",
       },
       {
         summary: {
@@ -97,12 +95,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-03T14:22:03.094Z",
-          "latest-update-date": "2020-03-03T14:22:03.094Z"
+          "latest-update-date": "2020-03-03T14:22:03.094Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/sergsergsre",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/sergsergsre",
+        title: "User",
       },
       {
         summary: {
@@ -110,12 +107,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-27T17:15:09.441Z",
-          "latest-update-date": "2020-02-27T17:15:09.441Z"
+          "latest-update-date": "2020-02-27T17:15:09.441Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/test2",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/test2",
+        title: "User",
       },
       {
         summary: {
@@ -123,12 +119,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-02T12:23:41.145Z",
-          "latest-update-date": "2020-03-02T12:23:41.145Z"
+          "latest-update-date": "2020-03-02T12:23:41.145Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/test",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/test",
+        title: "User",
       },
       {
         summary: {
@@ -136,12 +131,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-04T14:51:11.611Z",
-          "latest-update-date": "2020-03-04T14:51:11.611Z"
+          "latest-update-date": "2020-03-04T14:51:11.611Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testesttes",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testesttes",
+        title: "User",
       },
       {
         summary: {
@@ -149,12 +143,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-03T15:15:22.033Z",
-          "latest-update-date": "2020-03-03T15:15:22.033Z"
+          "latest-update-date": "2020-03-03T15:15:22.033Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testidentity",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testidentity",
+        title: "User",
       },
       {
         summary: {
@@ -162,12 +155,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-04T12:40:51.002Z",
-          "latest-update-date": "2020-03-04T12:40:51.002Z"
+          "latest-update-date": "2020-03-04T12:40:51.002Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testpass",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testpass",
+        title: "User",
       },
       {
         summary: {
@@ -175,12 +167,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-03T15:49:36.200Z",
-          "latest-update-date": "2020-03-03T15:49:36.200Z"
+          "latest-update-date": "2020-03-03T15:49:36.200Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser12",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser12",
+        title: "User",
       },
       {
         summary: {
@@ -188,12 +179,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-20T14:32:29.333Z",
-          "latest-update-date": "2020-02-20T14:32:29.333Z"
+          "latest-update-date": "2020-02-20T14:32:29.333Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser1",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser1",
+        title: "User",
       },
       {
         summary: {
@@ -201,12 +191,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-20T14:33:01.528Z",
-          "latest-update-date": "2020-02-20T14:33:01.528Z"
+          "latest-update-date": "2020-02-20T14:33:01.528Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser2",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser2",
+        title: "User",
       },
       {
         summary: {
@@ -214,12 +203,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-21T15:00:57.297Z",
-          "latest-update-date": "2020-02-21T15:00:57.297Z"
+          "latest-update-date": "2020-02-21T15:00:57.297Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser3",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser3",
+        title: "User",
       },
       {
         summary: {
@@ -227,12 +215,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-21T15:16:10.564Z",
-          "latest-update-date": "2020-02-21T15:16:10.564Z"
+          "latest-update-date": "2020-02-21T15:16:10.564Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser4",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser4",
+        title: "User",
       },
       {
         summary: {
@@ -240,12 +227,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-21T15:21:17.873Z",
-          "latest-update-date": "2020-02-21T15:21:17.873Z"
+          "latest-update-date": "2020-02-21T15:21:17.873Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser5",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser5",
+        title: "User",
       },
       {
         summary: {
@@ -253,12 +239,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-21T15:39:24.852Z",
-          "latest-update-date": "2020-02-21T15:39:24.852Z"
+          "latest-update-date": "2020-02-21T15:39:24.852Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser6",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser6",
+        title: "User",
       },
       {
         summary: {
@@ -266,12 +251,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-21T15:43:06.555Z",
-          "latest-update-date": "2020-02-21T15:43:06.555Z"
+          "latest-update-date": "2020-02-21T15:43:06.555Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser7",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser7",
+        title: "User",
       },
       {
         summary: {
@@ -279,12 +263,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-02-21T15:44:21.705Z",
-          "latest-update-date": "2020-02-21T15:44:21.705Z"
+          "latest-update-date": "2020-02-21T15:44:21.705Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser8",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testuser8",
+        title: "User",
       },
       {
         summary: {
@@ -292,12 +275,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-04T16:16:23.739Z",
-          "latest-update-date": "2020-03-04T16:16:23.739Z"
+          "latest-update-date": "2020-03-04T16:16:23.739Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testusername",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/testusername",
+        title: "User",
       },
       {
         summary: {
@@ -305,12 +287,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T16:07:52.712Z",
-          "latest-update-date": "2020-03-06T16:07:52.712Z"
+          "latest-update-date": "2020-03-06T16:07:52.712Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/trssretserts453262",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/trssretserts453262",
+        title: "User",
       },
       {
         summary: {
@@ -318,12 +299,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T16:09:01.696Z",
-          "latest-update-date": "2020-03-06T16:09:01.696Z"
+          "latest-update-date": "2020-03-06T16:09:01.696Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/trssretserts453262asdfasdfa",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/trssretserts453262asdfasdfa",
+        title: "User",
       },
       {
         summary: {
@@ -331,12 +311,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T16:09:30.473Z",
-          "latest-update-date": "2020-03-06T16:09:30.473Z"
+          "latest-update-date": "2020-03-06T16:09:30.473Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/trssretserts453262asdfasdfaaefaew",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/trssretserts453262asdfasdfaaefaew",
+        title: "User",
       },
       {
         summary: {
@@ -344,12 +323,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T16:02:04.689Z",
-          "latest-update-date": "2020-03-06T16:02:04.689Z"
+          "latest-update-date": "2020-03-06T16:02:04.689Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/turtur",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/turtur",
+        title: "User",
       },
       {
         summary: {
@@ -357,12 +335,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-05T08:52:48.601Z",
-          "latest-update-date": "2020-03-05T08:52:48.601Z"
+          "latest-update-date": "2020-03-05T08:52:48.601Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/tyuktyukt",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/tyuktyukt",
+        title: "User",
       },
       {
         summary: {
@@ -370,12 +347,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T15:59:02.424Z",
-          "latest-update-date": "2020-03-06T15:59:02.424Z"
+          "latest-update-date": "2020-03-06T15:59:02.424Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte2345",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte2345",
+        title: "User",
       },
       {
         summary: {
@@ -383,12 +359,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T16:07:16.456Z",
-          "latest-update-date": "2020-03-06T16:07:16.456Z"
+          "latest-update-date": "2020-03-06T16:07:16.456Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte2345sfdg",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte2345sfdg",
+        title: "User",
       },
       {
         summary: {
@@ -396,12 +371,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T15:53:05.828Z",
-          "latest-update-date": "2020-03-06T15:53:05.828Z"
+          "latest-update-date": "2020-03-06T15:53:05.828Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte2",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte2",
+        title: "User",
       },
       {
         summary: {
@@ -409,12 +383,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T15:54:33.405Z",
-          "latest-update-date": "2020-03-06T15:54:33.405Z"
+          "latest-update-date": "2020-03-06T15:54:33.405Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte3",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte3",
+        title: "User",
       },
       {
         summary: {
@@ -422,12 +395,11 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T15:55:19.891Z",
-          "latest-update-date": "2020-03-06T15:55:19.891Z"
+          "latest-update-date": "2020-03-06T15:55:19.891Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte4",
-        title: "User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte4",
+        title: "User",
       },
       {
         summary: {
@@ -435,14 +407,13 @@ const collectionResource = {
           "user-status": "FORCE_CHANGE_PASSWORD",
           enabled: true,
           "created-date": "2020-03-06T15:51:43.510Z",
-          "latest-update-date": "2020-03-06T15:51:43.510Z"
+          "latest-update-date": "2020-03-06T15:51:43.510Z",
         },
         name: "User",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte",
-        title: "User"
-      }
-    ]
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/werwetrwte",
+        title: "User",
+      },
+    ],
   },
   _options: {
     title: "Users Collection",
@@ -451,31 +422,29 @@ const collectionResource = {
         method: "GET",
         rel: "fetch",
         mediaType: "application/vnd.hal+json",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
-        title: "Fetch Users Collection"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
+        title: "Fetch Users Collection",
       },
       {
         method: "POST",
         rel: "create",
         mediaType: "application/vnd.hal+json",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
         title: "Create new User",
         schema: {
           properties: {
             "user-name": {
-              type: "string"
+              type: "string",
             },
             "temporary-password": {
-              type: "string"
-            }
+              type: "string",
+            },
           },
-          required: ["user-name", "temporary-password"]
-        }
-      }
-    ]
-  }
+          required: ["user-name", "temporary-password"],
+        },
+      },
+    ],
+  },
 };
 
 const itemResource = {
@@ -487,10 +456,9 @@ const itemResource = {
   _links: {
     self: {
       name: "User",
-      href:
-        "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
-      title: "User"
-    }
+      href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
+      title: "User",
+    },
   },
   _options: {
     title: "User",
@@ -499,47 +467,45 @@ const itemResource = {
         method: "GET",
         rel: "fetch",
         mediaType: "application/vnd.hal+json",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
-        title: "Fetch User"
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
+        title: "Fetch User",
       },
       {
         method: "PATCH",
         rel: "update",
         mediaType: "application/vnd.hal+json",
-        href:
-          "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
+        href: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users/asdasd",
         title: "Update User",
         schema: {
           properties: {
             "user-name": {
-              type: "string"
-            }
-          }
-        }
-      }
+              type: "string",
+            },
+          },
+        },
+      },
     ],
     properties: {
       "user-name": {
-        type: "string"
+        type: "string",
       },
       "temporary-password": {
-        type: "string"
+        type: "string",
       },
       "user-status": {
-        type: "string"
+        type: "string",
       },
       enabled: {
-        type: "boolean"
+        type: "boolean",
       },
       "created-date": {
-        type: "date"
+        type: "date",
       },
       "latest-update-date": {
-        type: "date"
-      }
+        type: "date",
+      },
     },
-    required: ["user-name"]
-  }
+    required: ["user-name"],
+  },
 };
 export default App;
