@@ -13,9 +13,9 @@
     "copy": "node ./scripts/build/copy-distribution-files.js",
     "start": "rollup -c -w",
     "build": "npm run bundle && npm run copy",
-    "test": "jest --transformIgnorePatterns node_modules/?!axios/",
-    "test:watch": "npm test -- --watch --coverage",
-    "test:coverage": "npm test -- --coverage --coverageReporters=cobertura",
+    "test": "jest --collect-coverage --transformIgnorePatterns node_modules/?!axios/",
+    "test:watch": "npm test --watch --coverage",
+    "test:coverage": "npm test --collect-coverage --coverageReporters=cobertura",
     "test:coverage-dashboard": "npm test --collect-coverage"
   },
   "author": "DXC Halstack team",
