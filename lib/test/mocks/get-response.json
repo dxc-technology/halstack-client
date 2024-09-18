@@ -1,0 +1,355 @@
+{
+  "_count": 10,
+  "_links": {
+    "item": [
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/trewqasdfgyhujikolpyt",
+        "summary": {
+          "identifier": "trewqasdfgyhujikolpyt",
+          "insuredPeriod": "Jan 1, 2001  -  Dec 31, 2001",
+          "underwritingYear": 2001,
+          "baseCompany": "Continuum Reinsurance",
+          "Insured": "Test"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/FP_CIAR02",
+        "summary": {
+          "identifier": "FP_CIAR02",
+          "insuredPeriod": "Jan 1, 2018  -  Dec 31, 2018",
+          "underwritingYear": 2018,
+          "baseCompany": "SATYA_RE"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/GRE_PLB_141009_1",
+        "summary": {
+          "identifier": "GRE_PLB_141009_1",
+          "insuredPeriod": "Jan 1, 2009  -  Dec 31, 2009",
+          "underwritingYear": 2009,
+          "baseCompany": "GRE Base"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/RLI0023-1-20.nov.2009-10:39:38",
+        "summary": {
+          "identifier": "RLI0023-1-20.nov.2009-10:39:38",
+          "insuredPeriod": "Jan 1, 2008  -  Dec 31, 2008",
+          "underwritingYear": 2008,
+          "baseCompany": "Continuum Reinsurance",
+          "Insured": "Nestle"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/RLI0023-1-20.nov.2009-10:39:38",
+        "summary": {
+          "identifier": "RLI0023-1-20.nov.2009-10:39:38",
+          "insuredPeriod": "Jan 1, 2008  -  Dec 31, 2008",
+          "underwritingYear": 2008,
+          "baseCompany": "Continuum Reinsurance",
+          "Insured": "Nestle"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/AM_10825_SQL3",
+        "summary": {
+          "identifier": "AM_10825_SQL3",
+          "insuredPeriod": "Jun 3, 2017  -  Dec 31, 9999",
+          "underwritingYear": 2017,
+          "baseCompany": "GRE Base"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/POL55491",
+        "summary": {
+          "identifier": "POL55491",
+          "insuredPeriod": "Jan 1, 2007  -  Jan 1, 2008",
+          "underwritingYear": 2007,
+          "baseCompany": "GRE Base",
+          "Insured": "pl_skra"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/CLDIFCURR2",
+        "summary": {
+          "identifier": "CLDIFCURR2",
+          "insuredPeriod": "Jan 1, 2021  -  Dec 31, 2021",
+          "underwritingYear": 2021,
+          "baseCompany": "Continuum Reinsurance"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/LP_CG_09",
+        "summary": {
+          "identifier": "LP_CG_09",
+          "insuredPeriod": "Jan 1, 2018  -  Dec 31, 2018",
+          "underwritingYear": 2018,
+          "baseCompany": "SATYA_RE"
+        }
+      },
+      {
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/CGU0028",
+        "summary": {
+          "identifier": "CGU0028",
+          "insuredPeriod": "Jul 1, 2006  -  Nov 30, 2007",
+          "underwritingYear": 2006,
+          "baseCompany": "CGU AUTO PA / SCOB mandatory",
+          "Insured": "Norwegian Wood"
+        }
+      }
+    ],
+    "self": {
+      "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/"
+    },
+    "first": {
+      "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/?_start=1"
+    },
+    "next": {
+      "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/?_start=101"
+    },
+    "prev": {
+      "href": "(not present)"
+    },
+    "last": {
+      "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/?_start=10701"
+    }
+  },
+  "_options": {
+    "title": "Policy Businesses collection interactions",
+    "properties": {
+      "formerIdentifier": {
+        "type": "string",
+        "minLength": 0,
+        "maxLength": 50
+      },
+      "title": {
+        "type": "string",
+        "minLength": 0,
+        "maxLength": 60
+      },
+      "identifier": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 36
+      }
+    },
+    "required": ["identifier"],
+    "links": [
+      {
+        "rel": "search",
+        "title": "Search Policy Businesses collection content",
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/",
+        "method": "GET",
+        "mediaType": "application/vnd.hal+json",
+        "targetSchema": {
+          "$ref": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/schemas/policy/business/search"
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "identifier": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 36
+            },
+            "_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "_start": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "_num": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": []
+        }
+      },
+      {
+        "rel": "create",
+        "title": "Create a Policy Business",
+        "href": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/policy/businesses/",
+        "method": "POST",
+        "mediaType": "application/vnd.hal+json",
+        "targetSchema": {
+          "$ref": "https://dxcdarcop001v.dk.emea.csc.com:9050/api/schemas/policy/business/create"
+        },
+        "schema": {
+          "type": "object",
+          "properties": {
+            "formerIdentifier": {
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 50
+            },
+            "title": {
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 60
+            },
+            "identifier": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 36
+            },
+            "typeOfBusiness": {
+              "type": "object",
+              "properties": {
+                "subclassNumber": {
+                  "type": "integer"
+                },
+                "externalCode": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 50
+                },
+                "code": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 15
+                }
+              },
+              "required": ["subclassNumber", "code"]
+            },
+            "insuredPeriods": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "items": {
+                  "endDate": {
+                    "type": "string"
+                  },
+                  "startDate": {
+                    "type": "string"
+                  },
+                  "insuredIdentifier": {
+                    "type": "string"
+                  },
+                  "insuredReference": {
+                    "type": "string"
+                  },
+                  "underwritingYear": {
+                    "type": "integer"
+                  },
+                  "insuredPeriodDateSpanString": {
+                    "type": "string"
+                  },
+                  "insuredName": {
+                    "type": "string"
+                  },
+                  "beginDateTime": {
+                    "type": "string"
+                  },
+                  "beginDate": {
+                    "type": "string"
+                  },
+                  "sections": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "items": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "informationalLimit1": {
+                          "type": "integer"
+                        },
+                        "informationalLimit2": {
+                          "type": "integer"
+                        },
+                        "totalGrossPremium": {
+                          "type": "number"
+                        },
+                        "numOfInsuredObjects": {
+                          "type": "integer"
+                        },
+                        "displayName": {
+                          "type": "string"
+                        },
+                        "attachmentPeriodDateSpanString": {
+                          "type": "string"
+                        },
+                        "externalIdentifier": {
+                          "type": "string"
+                        },
+                        "sharePercent": {
+                          "type": "number"
+                        },
+                        "mainLimit": {
+                          "type": "integer"
+                        },
+                        "scopeOfCoverVersion": {
+                          "type": "integer"
+                        },
+                        "includedCountries": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "code": {
+                                "type": "string"
+                              },
+                              "isActive": {
+                                "type": "boolean"
+                              },
+                              "note": {
+                                "type": "string"
+                              },
+                              "isoAlpha3": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "currency": {
+                          "type": "object",
+                          "properties": {
+                            "isoAlpha": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 3
+                            }
+                          },
+                          "required": ["isoAlpha"]
+                        },
+                        "includedRefData": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "subclassNumber": {
+                                "type": "integer"
+                              },
+                              "externalCode": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 50
+                              },
+                              "code": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 15
+                              }
+                            },
+                            "required": ["subclassNumber", "code"]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": ["identifier", "insuredPeriods", "typeOfBusiness"]
+        }
+      }
+    ]
+  }
+}

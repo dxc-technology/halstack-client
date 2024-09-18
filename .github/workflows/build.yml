@@ -1,6 +1,6 @@
 name: Build Working Version
 
-on: push
+on: pull_request
 
 jobs:
   build:
