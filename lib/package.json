@@ -24,6 +24,7 @@
     "@babel/core": "7.23.2",
     "@babel/plugin-proposal-optional-chaining": "^7.8.3",
     "@babel/preset-env": "7.23.2",
+    "@rollup/plugin-babel": "^6.0.4",
     "axios-mock-adapter": "^1.22.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
@@ -36,8 +37,7 @@
     "jest": "^27.5.1",
     "jest-junit": "^13.0.0",
     "regenerator-runtime": "^0.13.1",
-    "rollup": "^1.9.0",
-    "rollup-plugin-babel": "^4.1.0",
+    "rollup": "^4.28.0",
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "dependencies": {
