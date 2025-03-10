@@ -1,0 +1,27 @@
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ],
+//   "compilerOptions": {
+//     "jsx": "react",
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "resolveJsonModule": true
+//   }
+// }
+
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // Importante: Habilitar el soporte para JSX
+    "moduleResolution": "node",
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowJs": true
+  },
+  "include": ["src/**/*"]
+}
