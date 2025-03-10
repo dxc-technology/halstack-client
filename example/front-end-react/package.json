@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@dxc-technology/halstack-client": "file:../../lib/dist",
+    "axios": "^1.8.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "^5.0.0"
