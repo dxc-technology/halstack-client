@@ -1,25 +1,6 @@
 import React from "react";
 import { HalApiCaller, HalResource } from "@dxc-technology/halstack-client";
-
 import "./App.css";
-
-const App = () => {
-  const colRes = HalResource(collectionResource);
-  const itemRes = HalResource(itemResource);
-
-  HalApiCaller.get({
-    url: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
-  });
-
-  return (
-    <div className="App">
-      <div className="App">{JSON.stringify(colRes)}</div>
-      <div className="App">
-        {"" + itemRes.getProperty("user-name").isRequired()}
-      </div>
-    </div>
-  );
-};
 
 const collectionResource = {
   _links: {
@@ -446,7 +427,6 @@ const collectionResource = {
     ],
   },
 };
-
 const itemResource = {
   "user-name": "asdasd",
   "user-status": "FORCE_CHANGE_PASSWORD",
@@ -508,4 +488,23 @@ const itemResource = {
     required: ["user-name"],
   },
 };
+
+const App = () => {
+  const colRes = HalResource(collectionResource);
+  const itemRes = HalResource(itemResource);
+
+  HalApiCaller.get({
+    url: "https://bgqrqjl2t2.execute-api.us-west-1.amazonaws.com/dev/realms/us-east-1_wCPANetpN/users",
+  });
+
+  return (
+    <div className="App">
+      <div className="App">{JSON.stringify(colRes)}</div>
+      <div className="App">
+        {"" + itemRes.getProperty("user-name").isRequired()}
+      </div>
+    </div>
+  );
+};
+
 export default App;
