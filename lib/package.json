@@ -41,6 +41,7 @@
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^1.8.2"
+    "axios": "^1.8.2",
+    "serialize-javascript": "^7.0.3"
   }
 }
