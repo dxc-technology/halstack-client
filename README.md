@@ -5,7 +5,7 @@ Halstack Client for JavaScript enables developers to easily work with hypermedia
 This SDK is released as a client-agnostic library that can be used both in browser applications (such as Vanilla JS, React or Angular applications) or backend applications (NodeJS applications). As such, it is distributed as UMD.
 
 ## Structure of this repository
-
+ 
 This repository contains two software assets:
 1. The Halstack Client library: [./lib](./lib). Documentation of the npm module is maintained in the [README](./lib/README.md) file in that folder.
 2. A example apps that use the local copy of the Halstack Client library: [./example](./example)
