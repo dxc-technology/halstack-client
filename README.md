@@ -36,7 +36,7 @@ The second part will be running the examples linked to the local version of your
 # (in another tab)
 cd example/front-end-react
 npm install
-npm start # runs create-react-app dev server
+npm run dev # runs create-react-app dev server
 ```
 
 Now, anytime you make a change to your library in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
